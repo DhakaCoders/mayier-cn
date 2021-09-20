@@ -238,9 +238,9 @@ var imgWidth = (containerOffsetRgt + content + 15);
 
 $('.about-us-lft-img-ctlr').css("width", imgWidth);
 
-var conHeight = $('.about-us-rgt').height();
-var conInnerHeight = conHeight;
-$('.about-us-lft-img').css('height', conInnerHeight);
+// var conHeight = $('.about-us-rgt').height();
+// var conInnerHeight = conHeight;
+// $('.about-us-lft-img').css('height', conInnerHeight);
 
 $(window).resize(function(){
   var windowWidth = $(window).width();
@@ -251,9 +251,9 @@ $(window).resize(function(){
   var imgWidth = (containerOffsetRgt + content + 15);
   $('.about-us-lft-img-ctlr').css("width", imgWidth);
 
-  var conHeight = $('.about-us-rgt').height();
-  var conInnerHeight = (conHeight - 99);
-  $('.about-us-lft-img').css('height', conInnerHeight);
+  // var conHeight = $('.about-us-rgt').height();
+  // var conInnerHeight = (conHeight - 99);
+  // $('.about-us-lft-img').css('height', conInnerHeight);
 });
 
 
