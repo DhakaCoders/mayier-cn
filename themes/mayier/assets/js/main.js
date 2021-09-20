@@ -229,6 +229,33 @@ if( $('.wpforms-error').length ){
   });
 }
 
+var windowWidth = $(window).width();
+var containerWidth = $('.container').width();
+var containerOffset = (windowWidth - containerWidth);
+var containerOffsetRgt = containerOffset / 2;
+var content = $('.about-us-lft').width();
+var imgWidth = (containerOffsetRgt + content + 15);
+
+$('.about-us-lft-img-ctlr').css("width", imgWidth);
+
+var conHeight = $('.about-us-rgt').height();
+var conInnerHeight = conHeight;
+$('.about-us-lft-img').css('height', conInnerHeight);
+
+$(window).resize(function(){
+  var windowWidth = $(window).width();
+  var containerWidth = $('.container').width();
+  var containerOffset = (windowWidth - containerWidth);
+  var containerOffsetRgt = containerOffset / 2;
+  var content = $('.about-us-lft').width();
+  var imgWidth = (containerOffsetRgt + content + 15);
+  $('.about-us-lft-img-ctlr').css("width", imgWidth);
+
+  var conHeight = $('.about-us-rgt').height();
+  var conInnerHeight = (conHeight - 99);
+  $('.about-us-lft-img').css('height', conInnerHeight);
+});
+
 
 /*starto of Noyon*/
 
