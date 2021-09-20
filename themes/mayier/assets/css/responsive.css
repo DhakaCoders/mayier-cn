@@ -16,7 +16,7 @@
 		font-size: 34px;
 	}
 	h4,.fl-h4{
-		font-size: 28px;
+		font-size: 26px;
 	}
 	h5,.fl-h5{
 		font-size: 22px;
@@ -31,9 +31,6 @@
 }
 
 @media(max-width: 1399px){
-	.container { 
-		max-width: 1100px;
-	}
 }
 
 @media(max-width: 1299px){
