@@ -1,3 +1,57 @@
+/*home banner*/
+
+.hm-banner{
+    position: relative;
+    overflow: hidden;
+}
+.hm-page-banner{
+    height: 635px;
+    position: relative;
+    overflow: hidden;
+}
+.page-banner-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hm-page-bnr-des{
+    position: relative;
+    z-index: 11;
+}
+
+
+.hm-bnr-info{
+    max-width: 780px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hm-bnr-info-inr{
+    padding: 10px 20px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 30px 0 30px 0;
+}
+
+.hm-select{
+    width: 30.1282%;
+}
+.hm-date-start{
+    width: 30.1282%;
+}
+.hm-date-end{
+    width: 27.5641%;
+}
+.hm-search{
+    width: 12.1794%;
+}
+
+
 /*select-2*/
 .hm-select-down-icon{
     position: relative;
@@ -9,7 +63,8 @@
     font-weight: 600;
     text-decoration: inherit;
     color: #9f9f9f;
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 1;
     position: absolute;
     right: 18px;
     top: 50%;
@@ -40,6 +95,7 @@
     height: 48px!important;
     border-color: #cecece!important;
     border: none!important;
+    padding-top: 2px;
 }
 .select2-search--dropdown{
     padding: 0!important;
@@ -76,9 +132,11 @@ body .select2-dropdown {
     -webkit-transition: all 0.5s;
 }
 .hm-select-down-icon .select2-container--default .select2-selection--single .select2-selection__rendered{
-    /*color: #777F84;*/
-    color:#525051!important;
+    color:#878787!important;
     opacity:1;
+    border: none;
+    font-size: 16px;
+    font-family: 'MoskLight300';
 }
 .select2-container--default .select2-search--dropdown .select2-search__field, 
 .bootstrap-select .dropdown-menu .bs-searchbox input {
@@ -111,6 +169,7 @@ select.select-2-cntlr.select2-hidden-accessible.hm-bnr-custom-select {
 }
 span.select2.select2-container.select2-container--default {
     width: 100%!important;
+    text-align: center;
 }
 .select2-results__option.select2-results__option--selectable.select2-results__option--highlighted:before{
     content: none;
@@ -126,6 +185,52 @@ span.select2.select2-container.select2-container--default {
 /*select-2*/
 
 
+.hm-date-start,
+.hm-date-end{
+    padding-right: 20px;
+    position: relative;
+}
+.hm-date-start:after,
+.hm-date-end:after{
+    content: "\f0d7";
+    font-family:"Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: inherit;
+    color: #9f9f9f;
+    font-size: 14px;
+    line-height: 1;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.hm-date-start input[type="text"],
+.hm-date-end input[type="text"]{
+    width: 100%;
+    font-size: 16px;
+    line-height: 1;
+    color: #878787;
+    text-align: center;
+    height: 30px;
+    text-transform: capitalize;
+}
+
+
+.hm-search{
+    padding-left: 25px;
+}
+.hm-search button{
+    width: 57px;
+    height: 51px;
+    background: #001e60;
+    border-radius: 15px 0 15px 0;
+}
+.hm-search button i{
+    color: #fff;
+}
 
 
 
