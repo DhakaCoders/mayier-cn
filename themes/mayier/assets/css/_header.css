@@ -627,7 +627,19 @@ body.visible-sidebar{
 	.hdr-bdr-content {
 	    left: 0;
 	}
-
+	.main-header .top-info ul li{
+		margin-left: 50px;
+	}
+	.main-menu .navigation > li > a{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.main-header .top-info ul li a{
+		font-size: 17px;
+	}
+	.main-header .top-info ul li .subtitle{
+		font-size: 15px;
+	}
 }
 
 
