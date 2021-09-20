@@ -59,53 +59,31 @@
 .cnt-addres.cnt-dtails > span > a.clr-org:hover{
     color: #282526;
 }
-.cnt-tel.cnt-dtails i{
+.cnt-dtails i{
+    display: inline-block;
     position: absolute;
     content: "";
-   /* background: url(../images/tel-icon.png);
-    background-repeat: no-repeat;
-    background-position: center center;*/
-    left: 0;
     bottom: 0;
+}
+.cnt-tel.cnt-dtails i{
+    left: 0;
     height: 32px;
     width: 44px;
-    /*background-size: cover;*/
 }
 .cnt-mail.cnt-dtails i{
-    position: absolute;
-    content: "";
-    /*background: url(../images/mail-icon.png);
-    background-repeat: no-repeat;
-    background-position: center center;*/
     left: 3px;
-    bottom: 0;
     height: 42px;
     width: 38px;
-    /*background-size: cover;*/
 }
 .cnt-addres.cnt-dtails i{
-    position: absolute;
-    content: "";
-    /*background: url(../images/location-icon.png);
-    background-repeat: no-repeat;
-    background-position: center center;*/
     left: 4px;
-    bottom: 0;
     height: 50px;
     width: 36px;
-    /*background-size: cover;*/
 }
 .cnt-time.cnt-dtails  i{
-    position: absolute;
-    content: "";
-    /*background: url(../images/time-icon.png);
-    background-repeat: no-repeat;
-    background-position: center center;*/
     left: 4px;
-    bottom: 0;
     height: 42px;
     width: 42px;
-    /*background-size: cover;*/
 } 
 .contact-form-info-cntlr,
 .contact-form-dsc-wrp {
