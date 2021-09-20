@@ -27,6 +27,7 @@
 
 .cnt-dtails {
     margin-bottom: 60px;
+    position: relative;
 }
 .cnt-dtails a {
     position: relative;
@@ -58,53 +59,53 @@
 .cnt-addres.cnt-dtails > span > a.clr-org:hover{
     color: #282526;
 }
-.cnt-tel.cnt-dtails a:after{
+.cnt-tel.cnt-dtails i{
     position: absolute;
     content: "";
-    background: url(../images/tel-icon.png);
+   /* background: url(../images/tel-icon.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center;*/
     left: 0;
     bottom: 0;
     height: 32px;
     width: 44px;
-    background-size: cover;
+    /*background-size: cover;*/
 }
-.cnt-mail.cnt-dtails a:after{
+.cnt-mail.cnt-dtails i{
     position: absolute;
     content: "";
-    background: url(../images/mail-icon.png);
+    /*background: url(../images/mail-icon.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center;*/
     left: 3px;
     bottom: 0;
     height: 42px;
     width: 38px;
-    background-size: cover;
+    /*background-size: cover;*/
 }
-.cnt-addres.cnt-dtails a:after{
+.cnt-addres.cnt-dtails i{
     position: absolute;
     content: "";
-    background: url(../images/location-icon.png);
+    /*background: url(../images/location-icon.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center;*/
     left: 4px;
     bottom: 0;
     height: 50px;
     width: 36px;
-    background-size: cover;
+    /*background-size: cover;*/
 }
-.cnt-time.cnt-dtails > a:after{
+.cnt-time.cnt-dtails  i{
     position: absolute;
     content: "";
-    background: url(../images/time-icon.png);
+    /*background: url(../images/time-icon.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center;*/
     left: 4px;
     bottom: 0;
     height: 42px;
     width: 42px;
-    background-size: cover;
+    /*background-size: cover;*/
 } 
 .contact-form-info-cntlr,
 .contact-form-dsc-wrp {
