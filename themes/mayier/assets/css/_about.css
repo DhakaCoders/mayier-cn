@@ -77,12 +77,12 @@
 .luxury-grids-cntlr ul {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 20px;
+    margin: 0 -15px;
 }
 
 .luxury-grids-cntlr ul li {
     width: 33.333%;
-    padding: 0 20px;
+    padding: 0 15px;
     padding-bottom: 20px;
 }
 .luxury-grid-item-img i{
