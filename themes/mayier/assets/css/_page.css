@@ -76,7 +76,7 @@ ul{
 ul li {
 	padding: 2px 0 10px 22px;
 	position: relative;
-	line-height: 22px;
+	line-height: 28px;
 }
 
 .default-page-con ul li::before,
@@ -109,7 +109,7 @@ ul li.refGridItem:before{
 	-ms-counter-increment: my-awesome-counter;
 	-webkit-counter-increment: my-awesome-counter;
 	padding: 2px 0 10px 25px;
-	line-height: 24px;
+	line-height: 28px;
 	position: relative;
 }
 .default-page-con ol li::before,
