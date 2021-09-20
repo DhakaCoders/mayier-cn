@@ -211,6 +211,8 @@
 	float: left;
 	text-align:left;
 	list-style: none;
+	padding-left: 2px;
+	padding-right: 2px;
 }
 
 .main-menu .navigation > li:last-child{
@@ -222,7 +224,7 @@
 	display:block;
 	font-size:16px;
 	color:#282526;
-	padding:13px 20px;
+	padding:13px 26px;
 	font-weight:700;
 	line-height:30px;
 	text-transform: uppercase;
