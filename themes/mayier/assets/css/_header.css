@@ -632,10 +632,6 @@ body.visible-sidebar{
 
 
 @media only screen and (max-width: 1499px){
-	.main-header .auto-container{
-		padding-left: 20px;
-		padding-right: 20px;
-	}
 	.hdr-bdr-content {
 	    left: -10px;
 	}
