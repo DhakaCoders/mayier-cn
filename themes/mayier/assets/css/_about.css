@@ -1,13 +1,18 @@
 .about-us-sec {
     position: relative;
+    padding-top: 75px;
+    margin-bottom: 145px;
 }
 .about-us-lft-img-ctlr{
     position: absolute;
-    top: 0;
     left: 0;
+    bottom: 0;
 }
 .about-us-lft-img{
     height: 550px;
+}
+.about-us-des {
+    padding-bottom: 30px;
 }
 .about-us-heading-title {
     font-weight: 400;
