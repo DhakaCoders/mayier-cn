@@ -265,6 +265,10 @@ $(window).resize(function(){
 
 $('.select-2-cntlr').select2();
 
+$('.start-flatpickr').flatpickr();
+
+$('.end-flatpickr').flatpickr();
+
 
 
     new WOW().init();
