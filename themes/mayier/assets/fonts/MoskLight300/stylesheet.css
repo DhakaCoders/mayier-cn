@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Mosk Light 300';
+    src: url('MoskLight300.eot');
+    src: url('MoskLight300.eot?#iefix') format('embedded-opentype'),
+        url('MoskLight300.woff2') format('woff2'),
+        url('MoskLight300.woff') format('woff'),
+        url('MoskLight300.ttf') format('truetype'),
+        url('MoskLight300.svg#MoskLight300') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
