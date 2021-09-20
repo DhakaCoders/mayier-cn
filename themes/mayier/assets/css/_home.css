@@ -8,6 +8,9 @@
     height: 635px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .page-banner-bg{
     position: absolute;
@@ -23,6 +26,13 @@
     z-index: 11;
 }
 
+.hm-bnr-hdr{
+    padding-bottom: 0;
+}
+.hm-bnr-title{
+    margin-bottom: 25px;
+    color: #fff;
+}
 
 .hm-bnr-info{
     max-width: 780px;
@@ -31,7 +41,7 @@
     margin-right: auto;
 }
 .hm-bnr-info-inr{
-    padding: 10px 20px;
+    padding: 0 20px;
     background: #fff;
     display: flex;
     align-items: center;
@@ -55,6 +65,22 @@
 /*select-2*/
 .hm-select-down-icon{
     position: relative;
+    padding-left: 50px;
+}
+.hm-select-down-icon:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url('../images/car.jpg');
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    background-position: center center!important;
+    height: 22px;
+    width: 44px;
 }
 .hm-select-down-icon:after{
     content: "\f0d7";
@@ -169,7 +195,6 @@ select.select-2-cntlr.select2-hidden-accessible.hm-bnr-custom-select {
 }
 span.select2.select2-container.select2-container--default {
     width: 100%!important;
-    text-align: center;
 }
 .select2-results__option.select2-results__option--selectable.select2-results__option--highlighted:before{
     content: none;
