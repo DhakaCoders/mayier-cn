@@ -8,7 +8,7 @@
     font-style: normal;
     font-weight: 600;
     text-decoration: inherit;
-    color: #000;
+    color: #9f9f9f;
     font-size: 18px;
     position: absolute;
     right: 18px;
@@ -157,16 +157,33 @@ span.select2.select2-container.select2-container--default {
     background: #fff;
     padding: 20px 10px;
     border-radius: 15px;
+    position: relative;
 }
 
-
+.fea-pro-hdr{
+    padding-bottom: 1px;
+    position: relative;
+    z-index: 11;
+}
 .fea-pro-grd-item-title{
     font-weight: 400;
+}
+.fea-pro-grd-item-title a{
+    color: #181818;
+}
+.fea-pro-grd-item-title a:hover{
+    color: #ee7d24;
 }
 .fea-pro-grd-img-ctlr{
     padding-bottom: 30px;
     border-bottom: 1px solid #d6d4d4;
     overflow: hidden;
+}
+
+.fea-pro-grd-img{
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 
@@ -202,9 +219,6 @@ span.select2.select2-container.select2-container--default {
 }
 .fea-pro-grd-info-item strong{
     display: block;
-    vertical-align: baseline;
-    font-size: 14px;
-    line-height: 1;
     color: #232756;
     padding-bottom: 4px;
     text-transform: capitalize;
@@ -223,7 +237,13 @@ span.select2.select2-container.select2-container--default {
     padding-bottom: 7px;
 }
 
-
+.fea-pro-grd-btn{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    margin-bottom: -14px;
+    z-index: 11;
+}
 .fea-pro-grd-btn ul{
     display: flex;
     margin-left: -4px;
@@ -267,4 +287,14 @@ span.select2.select2-container.select2-container--default {
 }
 .fea-pro-grd-btn ul li.mail a i{
     left: 10px;
+}
+
+.fea-pro-grd-btn ul li a:hover{
+    background: #ee7d24;
+}
+
+.fea-pro-grd-item:hover .fea-pro-grd-img{
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
 }
