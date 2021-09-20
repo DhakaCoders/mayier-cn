@@ -34,15 +34,29 @@
     position: relative;
     z-index: 11;
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hm-page-bnr-des .container,
+.hm-page-bnr-des .row,
+.hm-page-bnr-des .col-md-12,
+.hm-page-bnr-des .hm-page-bnr-des-inr{
+    height: 100%;
 }
 
 .hm-page-bnr-des-inr{
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hm-bnr-img{
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: -1;
 }
 
 .hm-bnr-hdr{
@@ -304,9 +318,15 @@ span.select2.select2-container.select2-container--default {
     background: #001e60;
     border-radius: 15px 0 15px 0;
     cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
 }
 .hm-search button i{
     color: #fff;
+}
+.hm-search button:hover{
+    background: #ee7d24;
 }
 
 
@@ -419,23 +439,25 @@ span.select2.select2-container.select2-container--default {
     padding-bottom: 7px;
 }
 
-.fea-pro-grd-btn{
+.fea-pro-grds{
     position: absolute;
     bottom: 0;
     left: 20px;
     margin-bottom: -14px;
     z-index: 11;
 }
-.fea-pro-grd-btn ul{
+.fea-pro-grds ul{
     display: flex;
+    flex-wrap: wrap;
     margin-left: -4px;
     margin-right: -4px;
 }
-.fea-pro-grd-btn ul li{
+.fea-pro-grds ul li{
     padding-left: 4px;
     padding-right: 4px;
+    padding-bottom: 10px;
 }
-.fea-pro-grd-btn ul li a{
+.fea-pro-grd-btn a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -444,18 +466,20 @@ span.select2.select2-container.select2-container--default {
     color: #fff;
     background: #001e60;
     text-transform: capitalize;
-    width: 103px;
+    max-width: 103px;
+    width: 100%;
     height: 29px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     position: relative;
+    padding: 2px 10px;
 }
-.fea-pro-grd-btn ul li.whatsapp a{
+.fea-pro-grd-btn.whatsapp a{
     background: #00d95f;
     justify-content: flex-end;
     padding-right: 10px;
 }
-.fea-pro-grd-btn ul li a i{
+.fea-pro-grd-btn a i{
     position: absolute;
     top: 50%;
     left: 20px;
@@ -464,14 +488,19 @@ span.select2.select2-container.select2-container--default {
     transform: translateY(-50%);
     margin-top: 0;
 }
-.fea-pro-grd-btn ul li.whatsapp a i{
+.fea-pro-grd-btn.whatsapp a i{
     left: 9px;
 }
-.fea-pro-grd-btn ul li.mail a i{
+
+.fea-pro-grd-btn.mail a{
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+.fea-pro-grd-btn.mail a i{
     left: 10px;
 }
 
-.fea-pro-grd-btn ul li a:hover{
+.fea-pro-grd-btn a:hover{
     background: #ee7d24;
 }
 
@@ -494,8 +523,9 @@ span.select2.select2-container.select2-container--default {
 
 .car-offer-rgt-img{
     position: absolute;
-    top: 60px;
+    bottom: 60px;
     right: 0;
+    width: 50%;
 }
 .car-offer-sec-inr{
     position: relative;
