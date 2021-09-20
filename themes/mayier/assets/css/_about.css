@@ -19,7 +19,7 @@
     color: #ee7d24;
     margin-bottom: 55px;
 }
-.about-us-des-heading {
+.about-us-des h2 {
     margin-bottom: 28px;
     font-weight: 400;
 }
@@ -28,13 +28,8 @@
     margin-bottom: 16px;
     line-height: 1.4;
 }
-.about-us-des p:nth-child(3){
-    margin-bottom: 18px;
-}
-.about-us-des p:nth-child(4){
-    margin-bottom: 50px;
-}
-.about-us-des-sub-heading {
+.about-us-des h3 {
+    margin-top: 50px;
     font-weight: 400;
 }
 
@@ -85,6 +80,17 @@
     padding: 0 15px;
     padding-bottom: 20px;
 }
+.luxury-fleets-sec{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+.luxury-fleets-sec-rgt-img-ctlr {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 .luxury-grid-item-img i{
     max-height: 54px;
     display: inline-block;
@@ -98,15 +104,8 @@
 .luxury-brand-con .sec-entry-hdr {
     padding-bottom: 90px;
 }
-.luxury-brand-con ul{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 -50px;
-    padding-bottom: 20px;
-}
-.luxury-brand-con ul li{
-    padding: 0 50px;
+.luxury-brand-con .brand-cntlr ul{
+    justify-content: start;
 }
 
 
