@@ -1,0 +1,58 @@
+
+.page-entry-header{
+	padding: 115px 0 110px;
+}
+.peh-title{
+	color: #ee7d24;
+	text-align: center;
+	font-weight: 400;
+}
+.promotions-grds-cntlr{
+	overflow: hidden;
+}
+
+.promotions-grds-cntlr ul{
+	display: flex;
+	margin: 0 -6px;
+	flex-wrap: wrap;
+}
+.promotions-grds-cntlr ul li{
+	padding: 0 6px 50px;
+	width: 50%;
+}
+.promotions-grd-item-fea-img{
+	overflow: hidden;
+}
+.promotions-grd-item-fea-img img{
+	width: 100%;
+}
+.pgi-des{
+	text-align: center;
+	padding: 55px 20px 30px;
+}
+.pgi-des-title {
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.pgi-des-title a{
+	color: inherit;
+}
+.pgi-des-title a:hover{
+	opacity: .8;
+}
+.pgi-des-title span{
+	color: #ee7d24;
+}
+
+
+.promotions-page-con{
+	padding-bottom: 150px;
+}
+
+
+
+@media (max-width: 1699px){
+	.promotions-grds-cntlr ul li {
+    	padding-bottom: 35px;
+	}
+}

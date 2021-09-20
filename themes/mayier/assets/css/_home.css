@@ -4,6 +4,15 @@
     position: relative;
     overflow: hidden;
 }
+.hm-bnr-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
 .hm-page-banner{
     height: 635px;
     position: relative;
@@ -24,6 +33,16 @@
 .hm-page-bnr-des{
     position: relative;
     z-index: 11;
+    width: 100%;
+}
+
+.hm-page-bnr-des-inr{
+    position: relative;
+}
+.hm-bnr-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .hm-bnr-hdr{
@@ -44,7 +63,7 @@
     padding: 0 20px;
     background: #fff;
     display: flex;
-    align-items: center;
+   /* align-items: center;*/
     border-radius: 30px 0 30px 0;
 }
 
@@ -66,6 +85,7 @@
 .hm-select-down-icon{
     position: relative;
     padding-left: 50px;
+    border-right: 1px solid #d2d4d7;
 }
 .hm-select-down-icon:before{
     content: "";
@@ -110,15 +130,15 @@
     background: #dc7223!important;
 }
 
-.select2-container{
+/*.select2-container{
     height: 48px!important;
-}
-.select-2-cntlr .select2-container .select2-selection--single{
+}*/
+/*.select-2-cntlr .select2-container .select2-selection--single{
     height: 48px!important;
-}
+}*/
 .select2-container--default .select2-selection--single{
     border-radius: 0!important;
-    height: 48px!important;
+    /*height: 48px!important;*/
     border-color: #cecece!important;
     border: none!important;
     padding-top: 2px;
@@ -145,13 +165,13 @@ body .select2-dropdown {
     box-shadow: 0px 30px 84px rgb(44 17 62 / 9%);
     border-radius: 3px;
 }
-.select2-container--default .select2-selection--single .select2-selection__rendered{
+.hm-select .select2-container--default .select2-selection--single .select2-selection__rendered{
     color: #878787;
     font-size: 14px;
-    height: 48px;
+   /* height: 48px;*/
     font-weight: 500;
     border: 1px solid #cecece;
-    padding-top: 8px!important;
+    padding-top: 20px!important;
     padding-left: 12px!important;
     transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -167,7 +187,7 @@ body .select2-dropdown {
 .select2-container--default .select2-search--dropdown .select2-search__field, 
 .bootstrap-select .dropdown-menu .bs-searchbox input {
     border: 1px solid #cecece!important;
-    height: 48px!important;
+   /* height: 48px!important;*/
     padding: 4px 15px;
     font-size:  14px;
 }
@@ -214,6 +234,34 @@ span.select2.select2-container.select2-container--default {
 .hm-date-end{
     padding-right: 20px;
     position: relative;
+    border-right: 1px solid #d2d4d7;
+}
+
+.hm-date-start-inr,
+.hm-date-end-inr{
+    padding-left: 90px;
+    position: relative;
+    height: 100%;
+}
+.hm-date-start-inr > div,
+.hm-date-end-inr > div{
+    height: 100%;
+}
+.hm-date-start-inr:after,
+.hm-date-end-inr:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url('../images/calender.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 24px;
+    width: 24px;
 }
 .hm-date-start:after,
 .hm-date-end:after{
@@ -231,6 +279,7 @@ span.select2.select2-container.select2-container--default {
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+    margin-top: 2px;
 }
 .hm-date-start input[type="text"],
 .hm-date-end input[type="text"]{
@@ -238,8 +287,7 @@ span.select2.select2-container.select2-container--default {
     font-size: 16px;
     line-height: 1;
     color: #878787;
-    text-align: center;
-    height: 30px;
+    height: 100%;
     text-transform: capitalize;
 }
 
@@ -247,11 +295,15 @@ span.select2.select2-container.select2-container--default {
 .hm-search{
     padding-left: 25px;
 }
+.hm-seach-inr{
+    padding: 10px 0;
+}
 .hm-search button{
     width: 57px;
     height: 51px;
     background: #001e60;
     border-radius: 15px 0 15px 0;
+    cursor: pointer;
 }
 .hm-search button i{
     color: #fff;
@@ -427,4 +479,33 @@ span.select2.select2-container.select2-container--default {
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
     transform: scale(0.95);
+}
+
+
+
+
+.car-offer-sec{
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+    background-position: left bottom!important;
+    padding: 70px 0 220px;
+    position: relative;
+}
+
+.car-offer-rgt-img{
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+.car-offer-sec-inr{
+    position: relative;
+    z-index: 9;
+}
+.car-offer-des{
+    max-width: 960px;
+    width: 100%;
+}
+.car-offer-des-title{
+    color: #ee7d24;
+    margin-bottom: 50px;
 }
