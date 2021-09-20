@@ -43,3 +43,16 @@
 .pgi-des-title span{
 	color: #ee7d24;
 }
+
+
+.promotions-page-con{
+	padding-bottom: 150px;
+}
+
+
+
+@media (max-width: 1699px){
+	.promotions-grds-cntlr ul li {
+    	padding-bottom: 35px;
+	}
+}
