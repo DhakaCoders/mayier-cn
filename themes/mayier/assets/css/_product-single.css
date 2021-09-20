@@ -337,3 +337,14 @@
     background-size: contain;
     background-position: center center;
 }
+
+
+/* pro-single-fea-pro-sec*/
+.fea-pro-sec.pro-single-fea-pro-sec{
+	background: transparent;
+}
+.fea-pro-sec.pro-single-fea-pro-sec .fea-pro-grd-item {
+    box-shadow: 0px 0px 15px 15px rgb(246 246 246);
+    -webkit-box-shadow: 0px 0px 26px 10px rgb(246 246 246);
+    -moz-box-shadow: 0px 0px 15px 15px rgba(246,246,246,1);
+}
