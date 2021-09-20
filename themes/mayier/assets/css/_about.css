@@ -92,3 +92,29 @@
 .luxury-grid-item-img img{
     max-height: 54px;
 }
+
+
+.hm-brands-sec{
+    padding-top: 65px;
+    padding-bottom: 60px;
+}
+.hm-brands-con ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -50px;
+    padding-bottom: 20px;
+}
+
+.hm-brands-con ul li {
+    padding: 0 50px;
+}
+.brand-item a{
+    display: inline-block;
+}
+.brand-item:hover a > img{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
