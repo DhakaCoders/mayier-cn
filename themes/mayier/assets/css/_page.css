@@ -269,3 +269,10 @@ ol li::before {
 .fl-pagination-ctlr ul li a:hover{
 	color: #282526;
 }
+
+
+/* ----page css ----- */
+
+.mcr-page-con-sec{
+	padding: 80px 0 100px;
+}
