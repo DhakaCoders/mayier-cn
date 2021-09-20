@@ -11,6 +11,9 @@
 .about-us-lft-img{
     height: 550px;
 }
+.about-us-des {
+    padding-bottom: 30px;
+}
 .about-us-heading-title {
     font-weight: 400;
     color: #ee7d24;
