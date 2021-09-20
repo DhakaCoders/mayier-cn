@@ -165,6 +165,21 @@ if( $('.responsive-slider').length ){
   }, false);
 })();
 
+
+/*start of Kashob*/
+
+
+
+
+/*starto of Noyon*/
+
+
+
+/*start of Shariful*/
+
+
+
+
     new WOW().init();
 
 })(jQuery);

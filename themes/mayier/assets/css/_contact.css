@@ -2,14 +2,17 @@
     padding-top: 100px;
     padding-bottom: 200px;
 }
-.contact-form-lft {
-    width: 33%;
-    float: left;
-    padding-right: 48px;
+.contect-form-block{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 860px;
+    width: 100%;
+    margin: 0 auto;
 }
-.contact-form-rgt {
-    width: 67%;
-    float: right;
+.contact-form-rgt,
+.contact-form-lft {
+    width: 50%;
+    padding: 0 15px;
 }
 .contact-form-heading,
 .contact-form-info-title{
@@ -63,8 +66,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     left: 0;
-    height: 23px;
-    width: 31px;
+    height: 32px;
+    width: 44px;
     background-size: cover;
     margin-top: 6px;
 }
@@ -75,33 +78,33 @@
     background-repeat: no-repeat;
     background-position: center center;
     left: 3px;
-    height: 30px;
-    width: 26px;
+    height: 42px;
+    width: 38px;
     background-size: cover;
     margin-top: 0;
 }
 .cnt-tel-2.cnt-dtails a:after{
     position: absolute;
     content: "";
-    background: url(../images/tel-icon-2.png);
+    background: url(../images/location-icon.png);
     background-repeat: no-repeat;
     background-position: center center;
     left: 4px;
-    height: 28px;
-    width: 20px;
+    height: 50px;
+    width: 36px;
     background-size: cover;
     margin-top: 2px;
 }
 .cnt-addres.cnt-dtails > span:after{
     position: absolute;
     content: "";
-    background: url(../images/location-icon.png);
+    background: url(../images/time-icon.png);
     background-repeat: no-repeat;
     background-position: center center;
     left: 4px;
     top: 0;
-    height: 35px;
-    width: 23px;
+    height: 42px;
+    width: 42px;
     background-size: cover;
     margin-top: 5px;
 } 
@@ -110,9 +113,6 @@
     padding: 0 30px;
     padding-top: 55px;
     padding-bottom: 35px;
-    -webkit-box-shadow: 2px 2px 15px 4px rgb(240 240 240 / 75%);
-    box-shadow: 2px 2px 15px 4px rgb(240 240 240 / 75%);
-    border-radius: 10px;
 }
 .contact-form-dsc-wrp {
     height: 100%;
@@ -128,12 +128,12 @@
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field {
     width: 100%;
     padding: 0 10px;
-    margin-bottom: 31px;
+    margin-bottom: 27px;
     position: relative;
 } 
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea textarea,
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.FullWidthField textarea{
-    height: 85px!important;
+    height: 122px!important;
     display: block;
     resize: none;
 }
@@ -144,15 +144,15 @@
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input {
     width: 100%;
     max-width: 100%;
-    height: 48px;
+    height: 38px;
     background: #fff;
-    border: 1px solid #cecece;
+    border: 1px solid #c8c8c7;
     box-sizing: border-box;
     padding: 12px 16px 9px 16px;
     padding-right: 40px;
     color: #777F84;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 0!important;
     line-height: 1;
     transition: all 0.5s;
