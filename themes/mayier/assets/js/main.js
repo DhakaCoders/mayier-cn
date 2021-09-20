@@ -269,6 +269,15 @@ $('.start-flatpickr').flatpickr();
 
 $('.end-flatpickr').flatpickr();
 
+if (windowWidth > 767) {
+  if( $('.hm-page-banner').length ){
+    var windowHeight = $(window).height();
+    if (windowHeight < 635) {
+      $('.hm-page-banner').css('height', windowHeight);
+    }
+  }
+}
+
 
 
     new WOW().init();

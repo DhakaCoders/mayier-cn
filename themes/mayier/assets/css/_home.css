@@ -558,3 +558,44 @@ span.select2.select2-container.select2-container--default {
 .promotion-grds-sec-ctlr{
     padding-top: 50px;
 }
+
+
+
+@media(max-width: 1699px){
+    .car-offer-sec{
+        padding: 70px 0 190px;
+    }
+    .car-offer-rgt-img{
+        bottom: 30px;
+    }
+    .fea-pro-sec{
+        padding-top: 70px;
+    }
+    .fea-pro-grds > ul{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .fea-pro-grds > ul > li{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 70px;
+    }
+    .fea-pro-grds-button{
+        left: 10px;
+        right: 10px;
+    }
+    .fea-pro-btm-des p{
+        font-size: 40px;
+    }
+}
+@media(max-width: 1399px){
+    .car-offer-sec{
+        padding: 70px 0 150px;
+    }
+    .fea-pro-sec{
+        padding-top: 60px;
+    }
+    .fea-pro-btm-des p{
+        font-size: 35px;
+    }
+}
