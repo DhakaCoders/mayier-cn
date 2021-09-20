@@ -23,6 +23,9 @@
   <link rel="stylesheet" type="text/css" href="assets/flatpickr/flatpickr.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
 
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -192,41 +195,43 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="page-bnr-des-inr">
+            <div class="hm-page-bnr-des-inr">
               <div class="sec-entry-hdr hm-bnr-hdr text-center">
                 <h1 class="hm-bnr-title sec-entry-hdr-title fl-h4">Fast & Easy Booking</h1>
               </div>
               <div class="hm-bnr-info">
-                <div class="hm-bnr-info-inr">
-                  <div class="hm-select hm-select-down-icon">
-                    <select class="hm-bnr-custom-select select-2-cntlr">
-                      <option selected>Choos a Car</option>
-                      <option value="1">car 1</option>
-                      <option value="2">car 2</option>
-                      <option value="3">car 3</option>
-                      <option value="4">car 4</option>
-                      <option value="5">car 5</option>
-                    </select>
-                  </div>
-                  <div class="hm-date-start">
-                    <div class="start-flatpickr">
-                      <input type="text" name="" placeholder="start date">
+                <form>
+                  <div class="hm-bnr-info-inr">
+                    <div class="hm-select hm-select-down-icon">
+                      <select class="hm-bnr-custom-select select-2-cntlr">
+                        <option selected>Choos a Car</option>
+                        <option value="1">car 1</option>
+                        <option value="2">car 2</option>
+                        <option value="3">car 3</option>
+                        <option value="4">car 4</option>
+                        <option value="5">car 5</option>
+                      </select>
+                    </div>
+                    <div class="hm-date-start">
+                      <div class="start-flatpickr">
+                        <input type="text" name="" placeholder="start date">
+                      </div>
+                    </div>
+                    <div class="hm-date-end">
+                      <div class="end-flatpickr">
+                        <input type="text" name="" placeholder="end date">
+                      </div>
+                    </div>
+                    <div class="hm-search">
+                      <div class="hm-seach-inr">
+                        <input type="text" name="" hidden>
+                        <button class="hm-search-icon">
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  <div class="hm-date-end">
-                    <div class="end-flatpickr">
-                      <input type="text" name="" placeholder="end date">
-                    </div>
-                  </div>
-                  <div class="hm-search">
-                    <div class="hm-seach-inr">
-                      <input type="text" name="" hidden>
-                      <button class="hm-search-icon">
-                        <i class="fas fa-search"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>

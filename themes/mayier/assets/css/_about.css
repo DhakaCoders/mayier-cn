@@ -1,15 +1,15 @@
 .about-us-sec {
     position: relative;
-    padding-top: 75px;
+    margin-top: 75px;
     margin-bottom: 145px;
 }
 .about-us-lft-img-ctlr{
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 0;
 }
 .about-us-lft-img{
-    height: 550px;
+    height: 670px;
 }
 .about-us-des {
     padding-bottom: 30px;
@@ -36,4 +36,59 @@
 }
 .about-us-des-sub-heading {
     font-weight: 400;
+}
+
+.about-us-luxury-sec {
+    padding-top: 95px;
+    padding-bottom: 110px;
+    background: #232756;
+}
+.luxury-heading-title {
+    text-align: center;
+    font-weight: 400;
+    color: #ee7d24;
+}
+.luxury-sec-entry-heading {
+    padding-bottom: 80px;
+}
+.luxury-grid-item {
+    text-align: center;
+}
+
+.luxury-grid-item-img {
+    padding-bottom: 30px;
+    display: flex;
+    max-height: 54px;
+    justify-content: center;
+    align-items: center;
+}
+
+.luxury-grid-item-title {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+.luxury-grid-item-desc p {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 48px;
+}
+
+.luxury-grids-cntlr ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+}
+
+.luxury-grids-cntlr ul li {
+    width: 33.333%;
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+.luxury-grid-item-img i{
+    max-height: 54px;
+    display: inline-block;
+}
+.luxury-grid-item-img img{
+    max-height: 54px;
 }
