@@ -63,8 +63,11 @@
 .cnt-dtails i{
     display: inline-block;
     position: absolute;
-    content: "";
-    bottom: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+
 }
 .cnt-tel.cnt-dtails i{
     left: 0;
