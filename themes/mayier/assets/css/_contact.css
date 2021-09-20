@@ -1,6 +1,6 @@
 .contact-form-sec-wrp {
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 75px;
+    padding-bottom: 80px;
 }
 .contact-forn-con-cntlr{
     max-width: 860px;
@@ -459,6 +459,27 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
     color: #D61D1D!important;
 }
 /*select-2*/
+
+
+/*map-start*/
+
+.contact-google-map-wrp{
+    position: relative;
+}
+.contact-google-map iframe{
+    height: 730px;
+    width: 100%;
+}
+.contact-google-parachute{
+    position: absolute;
+    left: -55px;
+    bottom: 100px;
+}
+.contact-parachute-icon {
+    position: absolute;
+    right: -130px;
+    top: -300px;
+}
 
 
 /*responsive-start*/
