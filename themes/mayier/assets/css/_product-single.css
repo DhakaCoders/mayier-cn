@@ -93,6 +93,9 @@
     border-bottom-right-radius: 15px;
     position: relative;
 }
+.pro-con-lft-btn ul li a{
+	background: #001e60;
+}
 .pro-con-lft-btn ul li a i,
 .pro-single-hding-rgt-btn ul li a i {
     position: absolute;
@@ -111,7 +114,7 @@
 .pro-single-hding-rgt-btn ul li.mail a i {
     left: 10px;
 }
-.pro-con-lft-btn ul li.whatsapp a,
+
 .pro-single-hding-rgt-btn ul li.whatsapp a {
     background: #00d95f;
     justify-content: flex-end;
@@ -347,4 +350,8 @@
     box-shadow: 0px 0px 15px 15px rgb(246 246 246);
     -webkit-box-shadow: 0px 0px 26px 10px rgb(246 246 246);
     -moz-box-shadow: 0px 0px 15px 15px rgba(246,246,246,1);
+}
+.fea-pro-sec.pro-single-fea-pro-sec .sec-entry-hdr-title{
+	color: inherit;
+	font-weight: inherit;
 }
