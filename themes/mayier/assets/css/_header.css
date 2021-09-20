@@ -68,7 +68,9 @@
 	position:relative;
 	display:block;
 }
-
+.main-header .main-box .logo-box .logo a{
+	display: inline-block;
+}
 .main-header .main-box .logo-box .logo img{
 	display:block;
 	max-width:100%;
@@ -123,25 +125,25 @@
 	margin-left: 63px;
 }
 
-.main-header .top-info ul li.email{
-	padding-left: 55px;
+.main-header .top-info ul li.phone{
+	padding-left: 70px;
 }
 
 .main-header .top-info ul li .subtitle{
 	position: relative;
 	display: block;
 	color: #282526;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: 300;
+	font-size: 16px;
+	font-weight: 400;
 	line-height: 20px;
+	padding-bottom: 2px;
 }
 
 .main-header .top-info ul li a{
 	position: relative;
 	display: block;
 	color: #232756;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 700;
 	line-height: 20px;
 }
@@ -149,22 +151,29 @@
 .main-header .top-info ul li .icon{
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 50%;
 	display: block;
-	top: 0px;
 	line-height: 32px;
 	margin-right: 10px;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 }
 
 .main-header .top-info ul li .icon img{
 	display: inline-block;
 	vertical-align: middle;
-	height: 36px;
 }
 
 .main-header .top-info ul li a:hover{
 	color: #E30613;
 }
+.main-header .top-info ul li.hdr-time a{
+	font-weight: 400;
+	color: #181818!important;
+}
+
+
 
 .main-header .nav-outer{
 	position:relative;
@@ -610,9 +619,7 @@ body.visible-sidebar{
 	.hdr-bdr-content {
 	    left: 0;
 	}
-	.main-header .main-box .logo-box .logo {
-	    max-width: 200px;
-	}
+
 }
 
 
