@@ -168,7 +168,19 @@ if( $('.responsive-slider').length ){
 
 /*start of Kashob*/
 
+if( $('.contact-form-wrp').length ){
+  $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
+    $('.wpforms-field input[required],.wpforms-field select[required]').parents('.wpforms-field').addClass('wpforms-has-error');
+    $('.wpforms-field input[required],.wpforms-field select[required]').addClass('wpforms-error');
+  });
+}
 
+
+if( $('.wpforms-error').length ){
+  $('.wpforms-error').on('click', function(){
+    $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
+  });
+}
 
 
 /*starto of Noyon*/
