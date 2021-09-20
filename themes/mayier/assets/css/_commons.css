@@ -15,16 +15,34 @@ a, a:hover, a:focus, button:hover, button:focus{
 	outline: 0;
 }
 
+a{
+	color: #f85700;
+}
+a:hover{
+	color: #282526;
+}
+
 body {
-    background: #f8f8f8;
-    color: #000000;
-    font-size: 18px;
-    line-height: 24px;
-     font-family: 'Candara';
+    background: #fff;
+    color: #282526;
+    font-size: 24px;
+    line-height: 26px;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 400;
 }
 p{
 	line-height: 1.2;
 	margin-bottom: 15px;
+}
+
+strong,b{
+	font-weight: 700;
+}
+i,em{
+	font-style: italic;
+}
+u{
+	text-decoration: underline;
 }
 
 input[type=text],
@@ -38,7 +56,7 @@ textarea{
 }
 ::selection {
   color: #fff;
-  background: #512C36;
+  background: #000;
 }
 /*-- app gap use pattern --*/
 /*data-xxs = 575
@@ -106,7 +124,7 @@ Containers
 
 }
 .container{
-	max-width: 1200px;
+	max-width: 1300px;
 	width: 100%;
 }
 .container-md{
