@@ -189,6 +189,7 @@ if( $('.wpforms-error').length ){
 
 /*start of Shariful*/
 
+$('.select-2-cntlr').select2();
 
 
 
