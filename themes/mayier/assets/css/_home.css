@@ -489,3 +489,12 @@ span.select2.select2-container.select2-container--default {
     background-position: left bottom!important;
     padding: 70px 0 200px;
 }
+
+.car-offer-des{
+    max-width: 960px;
+    width: 100%;
+}
+.car-offer-des-title{
+    color: #ee7d24;
+    margin-bottom: 50px;
+}
