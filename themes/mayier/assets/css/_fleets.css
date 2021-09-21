@@ -212,3 +212,17 @@
 	    font-size: 20px;
 	}
 }
+
+@media(max-width: 479px){
+	.fleets-page-ctlr .fea-pro-grds-button {
+	    left: 0;
+	    right: 0;
+	}
+	.fleets-page-ctlr .fea-pro-grd-btn.whatsapp a i {
+	    left: 50%;
+	    margin-left: -36px;
+	}
+	.fea-pro-grd-btn.mail a i {
+	    left: 50%;
+	}
+}
