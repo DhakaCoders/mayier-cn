@@ -338,8 +338,11 @@ span.select2.select2-container.select2-container--default {
 /*fea product grid*/
 
 .fea-pro-sec{
-    background: #faeee4;
     padding-top: 80px;
+}
+
+.sec-bg-pink{
+    background: #faeee4;
 }
 
 
@@ -386,6 +389,13 @@ span.select2.select2-container.select2-container--default {
     -webkit-transition: all 0.5s;
     -ms-transition: all 0.5s;
     transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fea-pro-grd-img img{
+    max-height: 121px;
 }
 
 
@@ -516,18 +526,23 @@ span.select2.select2-container.select2-container--default {
 
 
 .car-offer-sec{
-    background-repeat: no-repeat!important;
-    background-size: contain!important;
-    background-position: left bottom!important;
-    padding: 70px 0 220px;
+    padding: 70px 0 190px;
+    min-height: 780px;
     position: relative;
+}
+
+.car-offer-lft-img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 56%;
 }
 
 .car-offer-rgt-img{
     position: absolute;
-    bottom: 60px;
+    bottom: 25px;
     right: 0;
-    width: 50%;
+    width: 60%;
 }
 .car-offer-sec-inr{
     position: relative;

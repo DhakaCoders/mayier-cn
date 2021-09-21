@@ -266,11 +266,13 @@ $(window).resize(function(){
 $('.select-2-cntlr').select2();
 
 $('.start-flatpickr').flatpickr({
-  disableMobile: "true"
+  disableMobile: "true",
+  selectOnClose: true
 });
 
 $('.end-flatpickr').flatpickr({
-  disableMobile: "true"
+  disableMobile: "true",
+  selectOnClose: true
 });
 
 if (windowWidth > 767) {
