@@ -61,6 +61,12 @@
     font-weight: 400;
     margin-bottom: 23px;
 }
+.rental-services-grid-item-title a{
+    color: #fff;
+}
+.rental-services-grid-item-title a:hover{
+    color: #ee7d24;
+}
 .rental-services-grid-item-desc p {
     color: #fff;
     font-size: 14px;
@@ -134,7 +140,9 @@
     padding: 0 50px;
 }
 .brand-item a{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .brand-item:hover a > img{
     -webkit-transform: scale(1.07);
