@@ -466,6 +466,9 @@ label.wpforms-input-icon.phone i {
     .luxury-brand-con .sec-entry-hdr {
         padding-bottom: 70px;
     }
+    .sec-entry-hdr {
+        padding-bottom: 25px;
+    }
 }
 @media (max-width: 1399px){
     .brand-cntlr ul{
@@ -504,6 +507,9 @@ label.wpforms-input-icon.phone i {
     }
     .luxury-brand-con .sec-entry-hdr {
         padding-bottom: 65px;
+    }
+    .hm-brands-sec {
+        padding-top: 15px;
     }
 }
 @media (max-width: 1299px){
@@ -582,6 +588,13 @@ label.wpforms-input-icon.phone i {
     }
     .luxury-brand-con .brand-cntlr ul{
         margin: 0 -20px;
+    }
+    .hm-brands-sec {
+        padding-top: 10px;
+        padding-bottom: 45px;
+    }
+    .sec-entry-hdr {
+        padding-bottom: 20px;
     }
 }
 @media (max-width: 991px){
