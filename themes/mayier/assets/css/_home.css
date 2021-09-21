@@ -468,7 +468,7 @@ span.select2.select2-container.select2-container--default {
     color: #fff;
     background: #001e60;
     text-transform: capitalize;
-    max-width: 103px;
+    min-width: 103px;
     width: 100%;
     height: 29px;
     border-top-left-radius: 15px;
@@ -558,6 +558,9 @@ span.select2.select2-container.select2-container--default {
 .promotion-grds-sec-ctlr{
     padding-top: 50px;
 }
+
+
+
 
 
 
