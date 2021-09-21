@@ -727,6 +727,9 @@ span.select2.select2-container.select2-container--default {
     .sec-entry-hdr {
         padding-bottom: 20px;
     }
+    .promotion-grds-sec-ctlr {
+        padding-top: 40px;
+    }
 }
 
 
@@ -796,6 +799,9 @@ span.select2.select2-container.select2-container--default {
         left: 10px!important;
         right: 10px!important;
     }
+    .promotion-grds-sec-ctlr {
+        padding-top: 30px;
+    }
 }
 @media(max-width: 575px){
     .car-offer-sec {
@@ -809,8 +815,8 @@ span.select2.select2-container.select2-container--default {
 @media(max-width: 479px){
     .fea-pro-grds-button{
         position: inherit;
-        left: 0;
-        right: 0;
+        left: 0!important;
+        right: 0!important;
     }
     .fea-pro-grds-button ul{
         display: block;
@@ -871,8 +877,3 @@ span.select2.select2-container.select2-container--default {
     }
 }
 
-@media(max-width: 359px){
-    .car-offer-sec {
-        padding: 40px 0 70px;
-    }
-}
