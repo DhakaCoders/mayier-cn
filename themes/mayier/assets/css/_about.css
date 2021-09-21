@@ -86,8 +86,8 @@
 }
 .luxury-fleets-sec{
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 120px;
+    padding-top: 95px;
+    padding-bottom: 135px;
 }
 .luxury-fleets-sec-rgt-img-ctlr {
     position: absolute;
@@ -113,6 +113,9 @@
 }
 .luxury-brand-con .brand-cntlr ul{
     justify-content: start;
+}
+.luxury-brand-con .brand-cntlr {
+    padding-right: 15%;
 }
 
 
@@ -190,6 +193,13 @@
     .rental-services-grid-item-desc p{
         padding: 0 65px;
     }
+    .luxury-fleets-sec {
+        padding-top: 85px;
+        padding-bottom: 120px;
+    }
+    .luxury-brand-con .sec-entry-hdr {
+        padding-bottom: 80px;
+    }
 }
 @media (max-width: 1599px){
     .brand-cntlr ul{
@@ -214,6 +224,10 @@
     }
     .rental-services-sec-entry-heading {
         padding-bottom: 65px;
+    }
+    .luxury-fleets-sec {
+        padding-top: 75px;
+        padding-bottom: 105px;
     }
 }
 @media (max-width: 1499px){
@@ -256,6 +270,13 @@
         padding-top: 75px;
         padding-bottom: 85px;
     }
+    .luxury-fleets-sec {
+        padding-top: 65px;
+        padding-bottom: 90px;
+    }
+    .luxury-brand-con .sec-entry-hdr {
+        padding-bottom: 70px;
+    }
 }
 @media (max-width: 1399px){
     .brand-cntlr ul{
@@ -288,6 +309,13 @@
     .rental-services-grid-item-img {
         margin-bottom: 18px;
     }
+    .luxury-fleets-sec {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .luxury-brand-con .sec-entry-hdr {
+        padding-bottom: 65px;
+    }
 }
 @media (max-width: 1299px){
     .luxury-fleets-sec-rgt-img-ctlr{
@@ -305,6 +333,13 @@
     }
     .rental-services-sec-entry-heading {
         padding-bottom: 45px;
+    }
+    .luxury-fleets-sec {
+        padding-top: 55px;
+        padding-bottom: 70px;
+    }
+    .luxury-brand-con .sec-entry-hdr {
+        padding-bottom: 60px;
     }
 }
 @media (max-width: 1199px){
@@ -343,8 +378,30 @@
         font-size: 13px;
         padding: 0 50px;
     }
+    .luxury-fleets-sec-rgt-img-ctlr {
+        max-width: 310px;
+    }
+    .luxury-fleets-sec {
+        padding-top: 45px;
+        padding-bottom: 55px;
+    }
+    .luxury-brand-con .sec-entry-hdr {
+        padding-bottom: 50px;
+    }
+    .luxury-brand-con .brand-cntlr ul li{
+        padding: 0 20px;
+    }
+    .luxury-brand-con .brand-cntlr ul{
+        margin: 0 -20px;
+    }
 }
 @media (max-width: 991px){
+    .brand-cntlr ul {
+        margin: 0 -25px;
+    }
+    .brand-cntlr ul li {
+        padding: 0 25px;
+    }
     .about-us-sec {
         margin-top: 45px;
         margin-bottom: 65px;
@@ -373,6 +430,16 @@
     }
     .rental-services-grid-item-desc p {
         padding: 0 17px;
+    }
+    .luxury-fleets-sec {
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+    .luxury-brand-con .sec-entry-hdr {
+        padding-bottom: 35px;
+    }
+    .luxury-brand-con .brand-cntlr {
+        padding-right: 30%;
     }
 }
 @media (max-width: 767px){
