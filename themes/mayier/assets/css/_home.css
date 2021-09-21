@@ -730,4 +730,11 @@ span.select2.select2-container.select2-container--default {
         transform: translate(-50%, -50%);
         margin-left: -30px;
     }
+    .fea-pro-grd-btn.whatsapp a i {
+        left: 50%;
+        margin-left: -36px;
+    }
+    .fea-pro-grd-btn.mail a i {
+        left: 50%;
+    }
 }
