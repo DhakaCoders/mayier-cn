@@ -599,6 +599,10 @@ span.select2.select2-container.select2-container--default {
 }
 
 
+.hm-select .select2-container,
+.hm-select .select2-container--default .select2-selection--single {
+    height: 100%!important;
+}
 
 
 
@@ -633,6 +637,9 @@ span.select2.select2-container.select2-container--default {
     .fea-pro-btm-des p{
         font-size: 40px;
     }
+    .sec-entry-hdr {
+        padding-bottom: 30px;
+    }
 }
 @media(max-width: 1399px){
     .car-offer-sec{
@@ -644,6 +651,9 @@ span.select2.select2-container.select2-container--default {
     }
     .fea-pro-btm-des p{
         font-size: 36px;
+    }
+    .sec-entry-hdr {
+        padding-bottom: 25px;
     }
 }
 
@@ -665,8 +675,8 @@ span.select2.select2-container.select2-container--default {
         width: 50%;
     }
     .fea-pro-grds-button {
-        left: 20px;
-        right: 20px;
+        left: 20px!important;
+        right: 20px!important;
     }
     .fea-pro-grd-btn a{
         justify-content: flex-start;
@@ -689,7 +699,37 @@ span.select2.select2-container.select2-container--default {
 
 
 @media(max-width: 991px){
-
+    .car-offer-des-title {
+        margin-bottom: 30px;
+    }
+    .car-offer-sec {
+        padding: 50px 0 80px;
+    }
+    .hm-date-start-inr, 
+    .hm-date-end-inr{
+        padding-left: 70px;
+    }
+    .hm-date-start-inr:after, 
+    .hm-date-end-inr:after{
+        left: 25px;
+    }
+    .hm-bnr-title{
+        margin-bottom: 20px;
+    }
+    .fixed-whatsapp-icon-inr{
+        width: 60px;
+        height: 60px;
+    }
+    .fixed-whatsapp-icon-inr a img{
+        max-width: 35px;
+        width: 100%;
+    }
+    .sec-entry-hdr {
+        padding-bottom: 20px;
+    }
+    .promotion-grds-sec-ctlr {
+        padding-top: 40px;
+    }
 }
 
 
@@ -711,14 +751,72 @@ span.select2.select2-container.select2-container--default {
         margin-left: auto;
         margin-right: auto;
     }
-
+    .hm-bnr-info-inr{
+        padding: 0 0;
+        flex-wrap: wrap;
+        background: none;
+    }
+    .hm-select,
+    .hm-date-start,
+    .hm-date-end,
+    .hm-search{
+        width: 50%;
+        background: #fff;
+    }
+    .hm-select,
+    .hm-date-start,
+    .hm-date-end, 
+    .hm-search{
+        margin-bottom: 20px;
+    }
+    .hm-select .select2-container--default .select2-selection--single .select2-selection__rendered{
+        padding-top: 9px!important;
+    }
+    .hm-select-down-icon{
+        padding-left: 70px;
+    }
+    .hm-select-down-icon:before{
+        left: 15px;
+    }
+    .hm-search{
+        text-align: center;
+    }
+    .hm-page-banner{
+        height: 500px;
+    }
+    .fixed-whatsapp-icon-inr{
+        width: 50px;
+        height: 50px;
+    }
+    .fixed-whatsapp-icon-inr a img{
+        max-width: 30px;
+        width: 100%;
+    }
+    .sec-entry-hdr {
+        padding-bottom: 15px;
+    }
+    .fea-pro-grds-button {
+        left: 10px!important;
+        right: 10px!important;
+    }
+    .promotion-grds-sec-ctlr {
+        padding-top: 30px;
+    }
+}
+@media(max-width: 575px){
+    .car-offer-sec {
+        padding: 40px 0 80px;
+    }
+    .hm-page-banner {
+        height: 450px;
+    }
 }
 
 @media(max-width: 479px){
     .fea-pro-grds-button{
         position: inherit;
-        left: 0;
-        right: 0;
+        left: 0!important;
+        right: 0!important;
     }
     .fea-pro-grds-button ul{
         display: block;
@@ -749,4 +847,33 @@ span.select2.select2-container.select2-container--default {
     .fea-pro-grd-btn.mail a i {
         left: 50%;
     }
+    .car-offer-sec {
+        padding: 40px 0 100px;
+    }
+    .hm-page-banner {
+        height: 400px;
+    }
+    .hm-select, 
+    .hm-date-start, 
+    .hm-date-end, 
+    .hm-search{
+        width: 100%;
+    }
+    .hm-date-start,
+    .hm-date-end{
+        padding-top: 10px;
+        padding-bottom: 12px;
+    }
+    .hm-date-start-inr:after, 
+    .hm-date-end-inr:after{
+        margin-top: 2px;
+    }
+    .hm-search button{
+        width: 50px;
+        height: 40px;
+    }
+    .hm-search button i{
+        font-size: 14px;
+    }
 }
+
