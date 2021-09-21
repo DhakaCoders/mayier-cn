@@ -475,10 +475,40 @@
     .rental-services-grid-item-img {
         margin-bottom: 20px;
     }
+    .luxury-fleets-sec-rgt-img-ctlr{
+        position: initial;
+        width: 100%;
+        margin-left: auto;
+        padding-bottom: 30px;
+    }
+    .luxury-brand-con .brand-cntlr {
+        padding-right: 0;
+    }
+    .luxury-brand-con .brand-cntlr ul {
+        justify-content: center;
+    }
+    .luxury-brand-con .sec-entry-hdr{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .luxury-fleets-sec {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .brand-cntlr ul {
+        margin: 0 -20px;
+    }
+    .brand-cntlr ul li {
+        padding: 0 20px;
+    }
 }
 @media (max-width: 575px){
-
+    ..luxury-brand-con .sec-entry-hdr{
+        padding-bottom: 25px;
+    }
 }
 @media (max-width: 479px){
-
+    .luxury-fleets-sec{
+        padding-bottom: 25px;
+    }
 }
