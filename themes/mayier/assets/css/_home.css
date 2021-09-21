@@ -605,10 +605,14 @@ span.select2.select2-container.select2-container--default {
 
 @media(max-width: 1699px){
     .car-offer-sec{
-        padding: 70px 0 190px;
+        padding: 70px 0 160px;
+        min-height: 700px;
     }
     .car-offer-rgt-img{
-        bottom: 30px;
+        width: 57%;
+    }
+    .car-offer-des-title{
+        margin-bottom: 40px;
     }
     .fea-pro-sec{
         padding-top: 70px;
@@ -632,7 +636,8 @@ span.select2.select2-container.select2-container--default {
 }
 @media(max-width: 1399px){
     .car-offer-sec{
-        padding: 70px 0 150px;
+        padding: 60px 0 140px;
+        min-height: 660px;
     }
     .fea-pro-sec{
         padding-top: 60px;
@@ -645,6 +650,13 @@ span.select2.select2-container.select2-container--default {
 @media(max-width: 1199px){
     .fea-pro-btm-des p {
         font-size: 32px;
+    }
+    .car-offer-sec {
+        padding: 50px 0 100px;
+        min-height: 600px;
+    }
+    .car-offer-rgt-img {
+        width: 50%;
     }
 }
 
