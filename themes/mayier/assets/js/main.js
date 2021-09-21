@@ -266,16 +266,24 @@ $(window).resize(function(){
 $('.select-2-cntlr').select2();
 
 $('.start-flatpickr').flatpickr({
-  disableMobile: "true"
+  disableMobile: true,
+  selectOnClose: true,
+  closeOnSelect: true
 });
 
-$('.end-flatpickr').flatpickr();
+$('.end-flatpickr').flatpickr({
+  disableMobile: true,
+  selectOnClose: true,
+  closeOnSelect: true
+});
 
 if (windowWidth > 767) {
   if( $('.hm-page-banner').length ){
     var windowHeight = $(window).height();
+    var headerHight = $('.main-header').height();
+    var bnrHeight = (windowHeight - headerHight);
     if (windowHeight < 635) {
-      $('.hm-page-banner').css('height', windowHeight);
+      $('.hm-page-banner').css('height', bnrHeight);
     }
   }
 }
