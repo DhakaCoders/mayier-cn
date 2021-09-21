@@ -527,7 +527,7 @@ span.select2.select2-container.select2-container--default {
 
 .car-offer-sec{
     padding: 70px 0 190px;
-    min-height: 780px;
+    min-height: 810px;
     position: relative;
 }
 
@@ -542,7 +542,7 @@ span.select2.select2-container.select2-container--default {
     position: absolute;
     bottom: 25px;
     right: 0;
-    width: 60%;
+    width: 65%;
 }
 .car-offer-sec-inr{
     position: relative;
@@ -561,6 +561,8 @@ span.select2.select2-container.select2-container--default {
 .fea-pro-btm-des{
     text-align: center;
     padding-bottom: 30px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .fea-pro-btm-des p{
     font-size: 48px;

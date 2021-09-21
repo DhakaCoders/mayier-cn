@@ -267,14 +267,10 @@ $('.select-2-cntlr').select2();
 
 $('.start-flatpickr').flatpickr({
   disableMobile: true,
-  selectOnClose: true,
-  closeOnSelect: true
 });
 
 $('.end-flatpickr').flatpickr({
   disableMobile: true,
-  selectOnClose: true,
-  closeOnSelect: true
 });
 
 if (windowWidth > 767) {
