@@ -265,7 +265,9 @@ $(window).resize(function(){
 
 $('.select-2-cntlr').select2();
 
-$('.start-flatpickr').flatpickr();
+$('.start-flatpickr').flatpickr({
+  disableMobile: "true"
+});
 
 $('.end-flatpickr').flatpickr();
 
