@@ -155,6 +155,163 @@
 
 
 
+/*model-css*/
+
+/*.modal .modal-dialog{
+    width: 340px;
+}
+.modal .modal-dialog .modal-content{
+    border-radius: 17px;
+}
+.modal .modal-dialog .modal-content .modal-body{
+    padding: 0 35px 35px 35px;
+}
+.modal .modal-dialog .modal-content .modal-body button.close{
+    position: absolute;
+    z-index: 1000;
+    display: block;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    font-size: 15px;
+    line-height: 0;
+    color: #fff;
+    background: rgba(157,39,148,0.7);
+    border-radius: 0 15px;
+    transition: background .3s ease-out;
+}
+.form-model-img {
+    position: relative;
+    margin: 0 -35px 40px -35px;
+}
+.form-img::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    bottom: 0;
+    right: 0;
+    -ms-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+}
+.form-img {
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    height: 150px;
+}
+.form-logo {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.form-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-heading-title {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.form-modal-cntlr .form-modal .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field{
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    padding: 0;
+}
+.form-modal-cntlr .form-modal .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container{
+    margin: 0;
+}
+.form-modal-cntlr .form-modal .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea textarea,
+.form-modal-cntlr .form-modal .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
+    display: block;
+    text-align: left;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 6px!important;
+    outline: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    padding: 10px 20px;
+    padding-left: 40px;
+    height: 40px;
+    border: 1px solid #d1d1d1;
+    background: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.form-modal-cntlr .form-modal .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea textarea{
+    resize: none;
+    min-height: 120px;
+}
+.form-modal-cntlr .form-modal .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container {
+    margin-top: 30px;
+    text-align: center;
+}
+.form-modal-cntlr .form-modal .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button{
+    display: block;
+    width: 140px;
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: #872b90;
+    color: #fff;
+    box-shadow: 0 0 1px 0 rgb(135 43 144 / 20%);
+    border: 1px solid #872b90;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: all ease .3s 0s;
+    border: none!important;
+    margin: auto;
+}
+label.wpforms-input-icon {
+    margin: 0!important;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    line-height: 0;
+    font-size: 18px;
+    color: #c1cbdd;
+    pointer-events: none;
+    transition: color .3s ease-out;
+}
+label.wpforms-input-icon i {
+    display: block;
+    position: absolute;
+    font-size: 1em;
+    left: 50%;
+    top: 50%;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+}*/
+
+
 
 @media (max-width: 1699px){
     .hm-brands-sec{
