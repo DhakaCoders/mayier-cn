@@ -144,7 +144,56 @@
 
 
 @media (max-width: 1699px){
-    .luxury-fleets-sec-rgt-img-ctlr{
-        max-width: 480px;
+    .brand-cntlr ul{
+        margin: 0 -45px;
     }
+    .brand-cntlr ul li{
+        padding: 0 45px;
+    }
+    .luxury-fleets-sec-rgt-img-ctlr{
+        max-width: 400px;
+    }
+}
+@media (max-width: 1599px){
+    .brand-cntlr ul{
+        margin: 0 -40px;
+    }
+    .brand-cntlr ul li{
+        padding: 0 40px;
+    }
+    .luxury-fleets-sec-rgt-img-ctlr{
+        max-width: 380px;
+    }
+}
+@media (max-width: 1499px){
+    .brand-cntlr ul{
+        margin: 0 -35px;
+    }
+    .brand-cntlr ul li{
+        padding: 0 35px;
+    }
+    .luxury-fleets-sec-rgt-img-ctlr{
+        max-width: 365px;
+    }
+}
+@media (max-width: 1399px){
+
+}
+@media (max-width: 1299px){
+
+}
+@media (max-width: 1199px){
+
+}
+@media (max-width: 991px){
+
+}
+@media (max-width: 767px){
+
+}
+@media (max-width: 575px){
+
+}
+@media (max-width: 479px){
+
 }

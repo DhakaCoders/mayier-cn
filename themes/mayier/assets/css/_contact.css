@@ -468,6 +468,32 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
 
 /*responsive-start*/
 
+
+@media (max-width: 1499px){
+
+}
+@media (max-width: 1399px){
+
+}
+@media (max-width: 1299px){
+
+}
+@media (max-width: 1199px){
+
+}
+@media (max-width: 991px){
+
+}
+@media (max-width: 767px){
+
+}
+@media (max-width: 575px){
+
+}
+@media (max-width: 479px){
+
+}
+
 /*@media (max-width: 1699px){
     .contact-form-lft{
         width: 32%;
