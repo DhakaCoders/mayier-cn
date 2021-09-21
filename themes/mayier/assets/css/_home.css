@@ -355,6 +355,7 @@ span.select2.select2-container.select2-container--default {
     justify-content: center;
     background: #00da54;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .sec-bg-pink{
