@@ -14,10 +14,13 @@
 .about-us-des {
     padding-bottom: 30px;
 }
+.about-us-sec-entry-heading {
+    padding-bottom: 1px;
+}
 .about-us-heading-title {
     font-weight: 400;
     color: #ee7d24;
-    margin-bottom: 55px;
+    margin-bottom: 5px;
 }
 .about-us-des h2 {
     margin-top: 50px;
