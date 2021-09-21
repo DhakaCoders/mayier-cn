@@ -638,6 +638,66 @@ span.select2.select2-container.select2-container--default {
         padding-top: 60px;
     }
     .fea-pro-btm-des p{
-        font-size: 35px;
+        font-size: 36px;
     }
+}
+
+@media(max-width: 1199px){
+    .fea-pro-btm-des p {
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 1023px){
+    .fea-pro-grds > ul > li{
+        width: 50%;
+    }
+    .fea-pro-grds-button {
+        left: 20px;
+        right: 20px;
+    }
+    .fea-pro-grd-btn a{
+        justify-content: flex-start;
+        padding-left: 40px;
+    }
+    .fea-pro-grd-btn.whatsapp a{
+        justify-content: flex-start;
+    }
+    .fea-pro-grd-btn.mail a{
+        justify-content: flex-start;
+    }
+    .fea-pro-grd-btn.whatsapp a i {
+        left: 15px;
+    }
+    .fea-pro-grd-btn.mail a{
+        padding-left: 45px;
+    }
+}
+
+
+
+@media(max-width: 991px){
+
+}
+
+
+@media(max-width: 767px){
+    .fea-pro-grds > ul{
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+    }
+    .fea-pro-grds > ul > li {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 50px;
+    }
+    .fea-pro-grds > ul > li .fea-pro-grd-item{
+        max-width: 375px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
