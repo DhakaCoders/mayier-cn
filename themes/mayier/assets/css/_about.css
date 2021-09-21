@@ -157,7 +157,7 @@
 
 /*model-css*/
 
-/*.modal .modal-dialog{
+.modal .modal-dialog{
     width: 340px;
 }
 .modal .modal-dialog .modal-content{
@@ -309,7 +309,7 @@ label.wpforms-input-icon i {
     top: 50%;
     margin-top: -0.5em;
     margin-left: -0.5em;
-}*/
+}
 
 
 
