@@ -599,16 +599,24 @@ span.select2.select2-container.select2-container--default {
 }
 
 
+.hm-select .select2-container,
+.hm-select .select2-container--default .select2-selection--single {
+    height: 100%!important;
+}
 
 
 
 
 @media(max-width: 1699px){
     .car-offer-sec{
-        padding: 70px 0 190px;
+        padding: 70px 0 160px;
+        min-height: 700px;
     }
     .car-offer-rgt-img{
-        bottom: 30px;
+        width: 57%;
+    }
+    .car-offer-des-title{
+        margin-bottom: 40px;
     }
     .fea-pro-sec{
         padding-top: 70px;
@@ -629,15 +637,243 @@ span.select2.select2-container.select2-container--default {
     .fea-pro-btm-des p{
         font-size: 40px;
     }
+    .sec-entry-hdr {
+        padding-bottom: 30px;
+    }
 }
 @media(max-width: 1399px){
     .car-offer-sec{
-        padding: 70px 0 150px;
+        padding: 60px 0 140px;
+        min-height: 660px;
     }
     .fea-pro-sec{
         padding-top: 60px;
     }
     .fea-pro-btm-des p{
-        font-size: 35px;
+        font-size: 36px;
+    }
+    .sec-entry-hdr {
+        padding-bottom: 25px;
     }
 }
+
+@media(max-width: 1199px){
+    .fea-pro-btm-des p {
+        font-size: 32px;
+    }
+    .car-offer-sec {
+        padding: 50px 0 100px;
+        min-height: 600px;
+    }
+    .car-offer-rgt-img {
+        width: 50%;
+    }
+}
+
+@media(max-width: 1023px){
+    .fea-pro-grds > ul > li{
+        width: 50%;
+    }
+    .fea-pro-grds-button {
+        left: 20px!important;
+        right: 20px!important;
+    }
+    .fea-pro-grd-btn a{
+        justify-content: flex-start;
+        padding-left: 40px;
+    }
+    .fea-pro-grd-btn.whatsapp a{
+        justify-content: flex-start;
+    }
+    .fea-pro-grd-btn.mail a{
+        justify-content: flex-start;
+    }
+    .fea-pro-grd-btn.whatsapp a i {
+        left: 15px;
+    }
+    .fea-pro-grd-btn.mail a{
+        padding-left: 45px;
+    }
+}
+
+
+
+@media(max-width: 991px){
+    .car-offer-des-title {
+        margin-bottom: 30px;
+    }
+    .car-offer-sec {
+        padding: 50px 0 80px;
+    }
+    .hm-date-start-inr, 
+    .hm-date-end-inr{
+        padding-left: 70px;
+    }
+    .hm-date-start-inr:after, 
+    .hm-date-end-inr:after{
+        left: 25px;
+    }
+    .hm-bnr-title{
+        margin-bottom: 20px;
+    }
+    .fixed-whatsapp-icon-inr{
+        width: 60px;
+        height: 60px;
+    }
+    .fixed-whatsapp-icon-inr a img{
+        max-width: 35px;
+        width: 100%;
+    }
+    .sec-entry-hdr {
+        padding-bottom: 20px;
+    }
+    .promotion-grds-sec-ctlr {
+        padding-top: 40px;
+    }
+}
+
+
+@media(max-width: 767px){
+    .fea-pro-grds > ul{
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+    }
+    .fea-pro-grds > ul > li {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 50px;
+    }
+    .fea-pro-grds > ul > li .fea-pro-grd-item{
+        max-width: 375px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hm-bnr-info-inr{
+        padding: 0 0;
+        flex-wrap: wrap;
+        background: none;
+    }
+    .hm-select,
+    .hm-date-start,
+    .hm-date-end,
+    .hm-search{
+        width: 50%;
+        background: #fff;
+    }
+    .hm-select,
+    .hm-date-start,
+    .hm-date-end, 
+    .hm-search{
+        margin-bottom: 20px;
+    }
+    .hm-select .select2-container--default .select2-selection--single .select2-selection__rendered{
+        padding-top: 9px!important;
+    }
+    .hm-select-down-icon{
+        padding-left: 70px;
+    }
+    .hm-select-down-icon:before{
+        left: 15px;
+    }
+    .hm-search{
+        text-align: center;
+    }
+    .hm-page-banner{
+        height: 500px;
+    }
+    .fixed-whatsapp-icon-inr{
+        width: 50px;
+        height: 50px;
+    }
+    .fixed-whatsapp-icon-inr a img{
+        max-width: 30px;
+        width: 100%;
+    }
+    .sec-entry-hdr {
+        padding-bottom: 15px;
+    }
+    .fea-pro-grds-button {
+        left: 10px!important;
+        right: 10px!important;
+    }
+    .promotion-grds-sec-ctlr {
+        padding-top: 30px;
+    }
+}
+@media(max-width: 575px){
+    .car-offer-sec {
+        padding: 40px 0 80px;
+    }
+    .hm-page-banner {
+        height: 450px;
+    }
+}
+
+@media(max-width: 479px){
+    .fea-pro-grds-button{
+        position: inherit;
+        left: 0!important;
+        right: 0!important;
+    }
+    .fea-pro-grds-button ul{
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .fea-pro-grds-button ul li{
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    .fea-pro-grd-btn a{
+        text-align: center;
+        display: inline-block;
+        padding: 9px 20px;
+        height: 32px;
+    }
+    .fea-pro-grd-btn a i{
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: -30px;
+    }
+    .fea-pro-grd-btn.whatsapp a i {
+        left: 50%;
+        margin-left: -45px;
+    }
+    .fea-pro-grd-btn.mail a i {
+        left: 50%;
+    }
+    .car-offer-sec {
+        padding: 40px 0 100px;
+    }
+    .hm-page-banner {
+        height: 400px;
+    }
+    .hm-select, 
+    .hm-date-start, 
+    .hm-date-end, 
+    .hm-search{
+        width: 100%;
+    }
+    .hm-date-start,
+    .hm-date-end{
+        padding-top: 10px;
+        padding-bottom: 12px;
+    }
+    .hm-date-start-inr:after, 
+    .hm-date-end-inr:after{
+        margin-top: 2px;
+    }
+    .hm-search button{
+        width: 50px;
+        height: 40px;
+    }
+    .hm-search button i{
+        font-size: 14px;
+    }
+}
+

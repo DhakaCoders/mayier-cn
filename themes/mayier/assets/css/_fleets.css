@@ -1,6 +1,7 @@
 
 .fleets-page-ctlr .fea-pro-sec{
 	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .fleets-page-ctlr .sec-entry-hdr{
@@ -43,4 +44,185 @@
 
 .fleets-page-ctlr .fea-pro-btm-des{
 	padding-top: 150px;
+}
+
+.fleets-page-ctlr .hm-brands-sec{
+	padding-bottom: 180px;
+}
+
+
+
+
+
+@media(max-width: 1699px){
+	.fleets-page-ctlr .fea-pro-sec {
+	    padding-top: 80px;
+	    padding-bottom: 80px;
+	}
+	.fea-pro-select {
+	    padding-bottom: 40px;
+	}
+	.fleets-page-ctlr .fea-pro-grds > ul {
+	    margin-left: -15px;
+	    margin-right: -15px;
+	}
+	.fleets-page-ctlr .fea-pro-grds > ul > li {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+	.fea-pro-grd-btn.whatsapp a{
+		padding-right: 10px;
+	}
+	.fea-pro-grd-btn.mail a{
+		padding-right: 25px;
+	}
+	.fleets-page-ctlr .fea-pro-btm-des {
+	    padding-top: 120px;
+	}
+	.fea-pro-btm-des{
+		padding-left: 8%;
+    	padding-right: 8%;
+	}
+	.fleets-page-ctlr .hm-brands-sec {
+	    padding-bottom: 150px;
+	}
+}
+
+@media(max-width: 1399px){
+	.fleets-page-ctlr .fea-pro-sec {
+	    padding-top: 70px;
+	    padding-bottom: 70px;
+	}
+	.fleets-page-ctlr .fea-pro-btm-des {
+	    padding-top: 100px;
+	}
+	.fleets-page-ctlr .hm-brands-sec {
+	    padding-bottom: 130px;
+	}
+}
+
+@media(max-width: 1199px){
+	.fleets-page-ctlr .fea-pro-sec {
+	    padding-top: 60px;
+	    padding-bottom: 60px;
+	}
+	.fleets-page-ctlr .fea-pro-grds > ul {
+	    margin-left: -8px;
+	    margin-right: -8px;
+	}
+	.fleets-page-ctlr .fea-pro-grds > ul > li {
+	    padding-left: 8px;
+	    padding-right: 8px;
+	    padding-bottom: 60px;
+	}
+	.fea-pro-grds-button {
+	    left: 2px;
+	    right: 2px;
+	}
+	.fleets-page-ctlr .fea-pro-btm-des {
+	    padding-top: 90px;
+	}
+	.fleets-page-ctlr .hm-brands-sec {
+	    padding-bottom: 100px;
+	}
+}
+
+@media(max-width: 1023px){
+	.fleets-page-ctlr .fea-pro-grds > ul {
+	    margin-left: -15px;
+	    margin-right: -15px;
+	}
+	.fleets-page-ctlr .fea-pro-grds > ul > li {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    padding-bottom: 50px;
+	}
+	.fleets-page-ctlr .fea-pro-grds-button {
+	    left: 20px;
+	    right: 20px;
+	}
+}
+
+@media(max-width: 991px){
+	.fleets-page-ctlr .fea-pro-grd-btn.whatsapp a{
+		padding-left: 35px;
+	}
+	.fleets-page-ctlr .fea-pro-grd-btn.whatsapp a i {
+	    left: 10px;
+	}
+	.fleets-page-ctlr .fea-pro-grds-button {
+	    left: 10px!important;
+	    right: 10px!important;
+	}
+	.fleets-page-ctlr .fea-pro-sec {
+	    padding-top: 50px;
+	    padding-bottom: 50px;
+	}
+	.fleets-page-ctlr .fea-pro-btm-des {
+	    padding-top: 80px;
+	}
+	.fea-pro-btm-des p {
+	    font-size: 25px;
+	}
+	.fleets-page-ctlr .hm-brands-sec {
+	    padding-bottom: 80px;
+	}
+}
+
+@media(max-width: 767px){
+	.fleets-page-ctlr .fea-pro-sec {
+	    padding-top: 40px;
+	    padding-bottom: 40px;
+	}
+	.fea-pro-select {
+	    padding-bottom: 30px;
+	}
+	.fleets-page-ctlr .fea-pro-grds > ul{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.fleets-page-ctlr .fea-pro-grds > ul > li{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 50px;
+	}
+	.fleets-page-ctlr .fea-pro-btm-des {
+	    padding-top: 70px;
+	}
+	.fea-pro-btm-des {
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 15px;
+    }
+    .fea-pro-btm-des p {
+	    font-size: 22px;
+	}
+	.fleets-page-ctlr .hm-brands-sec {
+	    padding-bottom: 60px;
+	}
+}
+
+@media(max-width: 575px){
+	.fea-pro-btm-des{
+		padding-left: 0%;
+    	padding-right: 0%;
+	}
+	.fea-pro-btm-des p {
+	    font-size: 20px;
+	}
+}
+
+@media(max-width: 479px){
+	.fleets-page-ctlr .fea-pro-grds-button {
+	    left: 0!important;
+	    right: 0!important;
+	}
+	.fleets-page-ctlr .fea-pro-grd-btn.whatsapp a i {
+	    left: 50%;
+	    margin-left: -36px;
+	}
+	.fea-pro-grd-btn.mail a i {
+	    left: 50%;
+	}
 }
