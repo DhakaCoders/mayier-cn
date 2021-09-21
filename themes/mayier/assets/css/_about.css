@@ -115,8 +115,11 @@
 
 
 .hm-brands-sec{
-    padding-top: 65px;
+    padding-top: 15px;
     padding-bottom: 60px;
+}
+.brand-item {
+    padding-bottom: 30px;
 }
 .brand-cntlr ul {
     display: flex;
@@ -144,6 +147,9 @@
 
 
 @media (max-width: 1699px){
+    .hm-brands-sec{
+        padding-top: 20px;
+    }
     .brand-cntlr ul{
         margin: 0 -45px;
     }
