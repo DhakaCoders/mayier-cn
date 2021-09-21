@@ -643,6 +643,10 @@ label.wpforms-input-icon.phone i {
     .luxury-brand-con .brand-cntlr {
         padding-right: 30%;
     }
+    .hm-brands-sec {
+        padding-top: 0px;
+        padding-bottom: 35px;
+    }
 }
 @media (max-width: 767px){
     .about-us-sec {

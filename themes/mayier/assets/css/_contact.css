@@ -1,6 +1,6 @@
 .contact-form-sec-wrp {
     padding-top: 75px;
-    padding-bottom: 80px;
+    padding-bottom: 85px;
 }
 .contact-forn-con-cntlr{
     max-width: 860px;
@@ -467,19 +467,54 @@ div.wpforms-container-full .wpforms-form select.wpforms-field-medium{
 
 
 /*responsive-start*/
-
-
+@media (max-width: 1699px){
+    .contact-form-sec-wrp {
+        padding-top: 65px;
+        padding-bottom: 75px;
+    }   
+    .contact-sec-entry-hdr-title{
+        margin-bottom: 80px;
+    }
+}
+@media (max-width: 1599px){
+    .contact-form-sec-wrp {
+        padding-top: 55px;
+        padding-bottom: 65px;
+    }   
+    .contact-sec-entry-hdr-title{
+        margin-bottom: 70px;
+    }
+}
 @media (max-width: 1499px){
-
+    .contact-form-sec-wrp {
+        padding-top: 45px;
+        padding-bottom: 55px;
+    }   
+    .contact-sec-entry-hdr-title{
+        margin-bottom: 60px;
+    }
 }
 @media (max-width: 1399px){
-
+    .contact-sec-entry-hdr-title{
+        margin-bottom: 55px;
+    }
 }
 @media (max-width: 1299px){
-
+    .contact-form-sec-wrp {
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+    .contact-sec-entry-hdr-title{
+        margin-bottom: 50px;
+    }
 }
 @media (max-width: 1199px){
-
+    .contact-form-sec-wrp {
+        padding-top: 30px;
+    }
+    .cnt-dtails span, .cnt-dtails a{
+        font-size: 15px;
+    }
 }
 @media (max-width: 991px){
 
