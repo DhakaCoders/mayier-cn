@@ -1,11 +1,46 @@
 
+.fleets-page-ctlr .fea-pro-sec{
+	padding-top: 100px;
+}
+
+.fleets-page-ctlr .sec-entry-hdr{
+	padding-bottom: 0;
+}
+.fleets-page-ctlr .sec-entry-hdr-title{
+	font-weight: 400;
+	margin-bottom: 12px;
+}
 
 .fea-pro-select{
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 }
 
 .pro-select{
-	width: 30%;
+	width: 170px;
 	margin-left: auto;
 	position: relative;
+}
+
+.pro-select .select2-container--default .select2-selection--single .select2-selection__rendered{
+	border: 1px solid #dee2e5;
+	border-radius: 20px 0 20px 0;
+	font-size: 16px;
+	line-height: 1;
+	color: #878787;
+	font-family: 'MoskLight300';
+	padding-top: 16px!important;
+	padding-left: 22px!important;
+}
+
+.fleets-page-ctlr .fea-pro-grds > ul{
+	margin-left: -25px;
+	margin-right: -25px;
+}
+.fleets-page-ctlr .fea-pro-grds > ul > li{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.fleets-page-ctlr .fea-pro-btm-des{
+	padding-top: 150px;
 }
