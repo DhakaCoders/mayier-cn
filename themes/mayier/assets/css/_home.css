@@ -289,12 +289,12 @@ span.select2.select2-container.select2-container--default {
     font-size: 14px;
     line-height: 1;
     position: absolute;
-    right: 18px;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    margin-top: 2px;
+    margin-top: 3px;
 }
 .hm-date-start input[type="text"],
 .hm-date-end input[type="text"]{
@@ -382,9 +382,8 @@ span.select2.select2-container.select2-container--default {
     padding: 20px 10px;
     border-radius: 15px;
     position: relative;
-    box-shadow: 0px 1px 13px 0px rgba(247,247,247,0.75);
--webkit-box-shadow: 0px 1px 13px 0px rgba(247,247,247,0.75);
--moz-box-shadow: 0px 1px 13px 0px rgba(247,247,247,0.75);
+    -webkit-box-shadow: 2px 2px 15px 10px rgba(246,246,246,0.76); 
+    box-shadow: 2px 2px 15px 10px rgba(246,246,246,0.76);
 }
 
 .fea-pro-hdr{
@@ -606,10 +605,14 @@ span.select2.select2-container.select2-container--default {
 
 @media(max-width: 1699px){
     .car-offer-sec{
-        padding: 70px 0 190px;
+        padding: 70px 0 160px;
+        min-height: 700px;
     }
     .car-offer-rgt-img{
-        bottom: 30px;
+        width: 57%;
+    }
+    .car-offer-des-title{
+        margin-bottom: 40px;
     }
     .fea-pro-sec{
         padding-top: 70px;
@@ -633,12 +636,117 @@ span.select2.select2-container.select2-container--default {
 }
 @media(max-width: 1399px){
     .car-offer-sec{
-        padding: 70px 0 150px;
+        padding: 60px 0 140px;
+        min-height: 660px;
     }
     .fea-pro-sec{
         padding-top: 60px;
     }
     .fea-pro-btm-des p{
-        font-size: 35px;
+        font-size: 36px;
+    }
+}
+
+@media(max-width: 1199px){
+    .fea-pro-btm-des p {
+        font-size: 32px;
+    }
+    .car-offer-sec {
+        padding: 50px 0 100px;
+        min-height: 600px;
+    }
+    .car-offer-rgt-img {
+        width: 50%;
+    }
+}
+
+@media(max-width: 1023px){
+    .fea-pro-grds > ul > li{
+        width: 50%;
+    }
+    .fea-pro-grds-button {
+        left: 20px;
+        right: 20px;
+    }
+    .fea-pro-grd-btn a{
+        justify-content: flex-start;
+        padding-left: 40px;
+    }
+    .fea-pro-grd-btn.whatsapp a{
+        justify-content: flex-start;
+    }
+    .fea-pro-grd-btn.mail a{
+        justify-content: flex-start;
+    }
+    .fea-pro-grd-btn.whatsapp a i {
+        left: 15px;
+    }
+    .fea-pro-grd-btn.mail a{
+        padding-left: 45px;
+    }
+}
+
+
+
+@media(max-width: 991px){
+
+}
+
+
+@media(max-width: 767px){
+    .fea-pro-grds > ul{
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+    }
+    .fea-pro-grds > ul > li {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 50px;
+    }
+    .fea-pro-grds > ul > li .fea-pro-grd-item{
+        max-width: 375px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media(max-width: 479px){
+    .fea-pro-grds-button{
+        position: inherit;
+        left: 0;
+        right: 0;
+    }
+    .fea-pro-grds-button ul{
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .fea-pro-grds-button ul li{
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    .fea-pro-grd-btn a{
+        text-align: center;
+        display: inline-block;
+        padding: 9px 20px;
+        height: 32px;
+    }
+    .fea-pro-grd-btn a i{
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: -30px;
+    }
+    .fea-pro-grd-btn.whatsapp a i {
+        left: 50%;
+        margin-left: -45px;
+    }
+    .fea-pro-grd-btn.mail a i {
+        left: 50%;
     }
 }
