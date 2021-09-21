@@ -37,7 +37,9 @@ if( !function_exists('cbv_theme_setup') ){
         register_nav_menus( array(
             'cbv_main_menu' => __( 'Main Menu', 'mayier' ),
             'cbv_mobile_main_menu' => __( 'Mobile Menu', 'mayier' ),
-            'cbv_footer_main_menu' => __( 'Footer Menu', 'mayier' ),
+            'cbv_footer_menu1' => __( 'Footer Menu 1', 'mayier' ),
+            'cbv_footer_menu1' => __( 'Footer Menu 2', 'mayier' ),
+            'cbv_copyright_menu' => __( 'Copyright', 'mayier' ),
         ) );
 
     }
