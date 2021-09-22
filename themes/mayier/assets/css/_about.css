@@ -158,7 +158,10 @@
 /*model-css*/
 
 .modal .modal-dialog{
-    width: 340px;
+    max-width: 370px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .modal .modal-dialog .modal-content{
     border-radius: 17px;
@@ -178,9 +181,13 @@
     font-size: 15px;
     line-height: 0;
     color: #fff;
-    background: rgba(157,39,148,0.7);
+    background: rgba(238,125,36,0.7);
     border-radius: 0 15px;
     transition: background .3s ease-out;
+    opacity: 1;
+}
+.modal .modal-dialog .modal-content .modal-body button.close:hover {
+    background: #ee7d24;
 }
 .form-model-img {
     position: relative;
@@ -300,11 +307,12 @@
     appearance: none;
     transition: all ease .3s 0s;
     margin: auto;
+    text-transform: capitalize;
 }
 .form-modal-cntlr .form-modal .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
     border-color: #ee7d24!important;
     background: #fff!important;
-    color: #000!important;
+    color: #ee7d24!important;
     box-shadow: none;
 }
 label.wpforms-input-icon {
@@ -714,6 +722,7 @@ label.wpforms-input-icon.phone i {
     }
     .modal .modal-dialog{
         margin: auto;
+        margin-top: 40px;
     }
 }
 @media (max-width: 479px){
@@ -723,8 +732,10 @@ label.wpforms-input-icon.phone i {
 }
 @media (max-width: 359px){
     .modal .modal-dialog{
-        max-width: 290px;
+        max-width: 320px;
         width: 100%;
         margin: auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 }
