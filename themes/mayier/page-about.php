@@ -90,37 +90,6 @@ get_template_part('templates/breadcrumbs');
                 </div>
               </li>
               <?php endforeach; ?>
-
-<!--               <li>
-                <div class="rental-services-grid-item">
-
-                    <div class="rental-services-grid-item-img mHc">
-                      <i>
-                        <img src="<?php echo THEME_URI; ?>/assets/images/luxury-img-2.png" alt="">
-                      </i>
-                    </div>
-                    <h3 class="fl-h4 rental-services-grid-item-title mHc1">Best Rate Guarantee</h3>
-                    <div class="rental-services-grid-item-desc">
-                      <p>We go through extensive factory training so that we may provide you with the knowledge you need to make an educated decision in choosing the vehicle that is right for your lifestyle.</p>
-                    </div>
-
-                </div>
-              </li>
-              <li>
-                <div class="rental-services-grid-item">
-
-                    <div class="rental-services-grid-item-img mHc">
-                      <i>
-                        <img src="<?php echo THEME_URI; ?>/assets/images/luxury-img-3.png" alt="">
-                      </i>
-                    </div>
-                    <h3 class="fl-h4 rental-services-grid-item-title mHc1">Awesome Customer Support</h3>
-                    <div class="rental-services-grid-item-desc">
-                      <p>We go through extensive factory training so that we may provide you with the knowledge you need to make an educated decision in choosing the vehicle that is right for your lifestyle.</p>
-                    </div>
-
-                </div>
-              </li> -->
             </ul>
           </div>
           <?php endif; ?>
@@ -132,17 +101,28 @@ get_template_part('templates/breadcrumbs');
 <?php endif; endif; ?>
 
 
+
+<?php
+	$showhidebrand = get_field('showhidebrand', $thisID);
+	if($showhidebrand): 
+		$fleetsbrand = get_field('fleetsbrand', $thisID);
+		if($fleetsbrand):
+			$luxuryFleetsFeaImg = !empty($fleetsbrand['image'])? cbv_get_image_tag( $fleetsbrand['image'] ): ''; 
+?>
 <section class="luxury-fleets-sec">
   <div class="luxury-fleets-sec-rgt-img-ctlr">
-    <img src="<?php echo THEME_URI; ?>/assets/images/about-us-2.jpg" alt="">
+    <?php echo $luxuryFleetsFeaImg; ?>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="luxury-brand-con">
           <div class="sec-entry-hdr">
-            <h2 class="sec-entry-hdr-title fl-h1">Luxury Fleets</h2>
+            <?php 
+            if( !empty($fleetsbrand['title']) ) printf( '<h2 class="sec-entry-hdr-title fl-h1">%s</h2>', $fleetsbrand['title'] ); 
+          	?>
           </div>
+
           <div class="brand-cntlr">
             <ul class="reset-list">
               <li>
@@ -182,7 +162,7 @@ get_template_part('templates/breadcrumbs');
     </div>
   </div>
 </section>
-
+<?php endif; endif; ?>
 
 
 
