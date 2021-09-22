@@ -305,6 +305,9 @@
 	border-radius: 10px;
 	margin-bottom: 20px;
 }
+.rqrmnt-mdul h6{
+	display: none;
+}
 .fl-h6.rqrmnt-mdul-tourists-title,
 .fl-h6.rqrmnt-mdul-hding-title{
 	font-size: 18px;
@@ -615,5 +618,23 @@
 	.pro-con-lft-btn ul li .whatsapp a i, .pro-single-hding-rgt-btn ul li .whatsapp a i{
 		left: 50%;
 		margin-left: -45px;
+	}
+	.rqrmnt-mdul{
+		display: block;
+	}
+	.rqrmnt-mdul h6{
+		display: block;
+		padding: 15px 10px;
+		background: #001e60;
+		margin-bottom: 20px!important;
+	}
+	.rqrmnt-mdul-hding{
+		display: none;
+	}
+	.rqrmnt-mdul ul{
+		margin-bottom: 20px;
+	}
+	.rqrmnt-mdul ul:last-of-type{
+		margin-bottom: 0;
 	}
 }
