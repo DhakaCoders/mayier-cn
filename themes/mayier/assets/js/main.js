@@ -263,7 +263,10 @@ $(window).resize(function(){
 
 /*start of Shariful*/
 
-$('.select-2-cntlr').select2();
+if($('.select-2-cntlr').length ){
+  $('.select-2-cntlr').select2();
+}
+
 
 if($('.start-flatpickr').length ){
   $('.start-flatpickr').flatpickr({
