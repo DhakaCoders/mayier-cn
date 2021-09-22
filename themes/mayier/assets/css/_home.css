@@ -852,7 +852,7 @@ span.select2.select2-container.select2-container--default {
         width: 100%;
     }
     .hm-page-banner{
-        height: 500px;
+        height: 580px;
     }
     .fixed-whatsapp-icon-inr{
         width: 50px;
@@ -878,7 +878,7 @@ span.select2.select2-container.select2-container--default {
         padding: 40px 0 80px;
     }
     .hm-page-banner {
-        height: 450px;
+        height: 520px;
     }
 }
 
@@ -921,7 +921,7 @@ span.select2.select2-container.select2-container--default {
         padding: 40px 0 100px;
     }
     .hm-page-banner {
-        height: 400px;
+        height: 650px;
     }
     .hm-select, 
     .hm-date-start, 
@@ -929,11 +929,11 @@ span.select2.select2-container.select2-container--default {
     .hm-search{
         width: 100%;
     }
-    .hm-date-start,
+    /*.hm-date-start,
     .hm-date-end{
         padding-top: 10px;
         padding-bottom: 12px;
-    }
+    }*/
     .hm-date-start-inr:after, 
     .hm-date-end-inr:after{
         margin-top: 2px;
@@ -960,6 +960,31 @@ span.select2.select2-container.select2-container--default {
     }
     .hm-select-down-icon:before {
         left: 20px;
+    }
+    .hm-date-start-inr, 
+    .hm-date-end-inr {
+        padding-left: 80px;
+    }
+    .hm-date-start input[type="text"], 
+    .hm-date-end input[type="text"]{
+        height: 50px;
+    }
+}
+
+
+@media(max-height: 700px){
+    .hm-bnr-img img{
+        max-width: 300px;
+    }
+}
+@media(max-height: 600px){
+    .hm-bnr-img img{
+        max-width: 250px;
+    }
+}
+@media(max-height: 500px){
+    .hm-bnr-img img{
+        max-width: 200px;
     }
 }
 
