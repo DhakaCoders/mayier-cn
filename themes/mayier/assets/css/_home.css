@@ -872,6 +872,12 @@ span.select2.select2-container.select2-container--default {
     .promotion-grds-sec-ctlr {
         padding-top: 30px;
     }
+    .hm-page-bnr-des-inr{
+        max-width: 500px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media(max-width: 575px){
     .car-offer-sec {
@@ -968,6 +974,9 @@ span.select2.select2-container.select2-container--default {
     .hm-date-start input[type="text"], 
     .hm-date-end input[type="text"]{
         height: 50px;
+    }
+    .hm-page-bnr-des-inr{
+        max-width: 230px;
     }
 }
 
