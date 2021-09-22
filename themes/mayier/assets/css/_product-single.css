@@ -80,7 +80,6 @@
 }
 .pro-con-lft-btn ul li a,
 .pro-single-hding-rgt-btn ul li a {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,6 +98,13 @@
 }
 .pro-con-lft-btn ul li a{
 	background: #001e60;
+}
+.pro-single-hding-rgt-btn ul li a:hover{
+	background: #00d95f;
+}
+.pro-single-hding-rgt-btn ul li .fea-pro-grd-btn.whatsapp a:hover{
+	background: #ee7d24;
+	
 }
 .pro-con-lft-btn ul li a i,
 .pro-single-hding-rgt-btn ul li a i {

@@ -31,6 +31,7 @@
 	font-family: 'MoskLight300';
 	padding-top: 16px!important;
 	padding-left: 22px!important;
+	height: 100%;
 }
 
 .fleets-page-ctlr .fea-pro-grds > ul{
@@ -48,6 +49,10 @@
 
 .fleets-page-ctlr .hm-brands-sec{
 	padding-bottom: 180px;
+}
+
+.pro-select .select2-container--default .select2-selection--single{
+	height: 48px!important;
 }
 
 
