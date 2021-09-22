@@ -529,8 +529,9 @@ span.select2.select2-container.select2-container--default {
 }
 .fea-pro-grd-btn.whatsapp a{
     background: #00d95f;
-    justify-content: flex-end;
-    padding-right: 15px;
+    /*justify-content: flex-end;*/
+    padding-right: 10px;
+    padding-left: 30px;
 }
 .fea-pro-grd-btn a i{
     position: absolute;
@@ -546,8 +547,8 @@ span.select2.select2-container.select2-container--default {
 }
 
 .fea-pro-grd-btn.mail a{
-    justify-content: flex-end;
-    padding-right: 30px;
+    padding-right: 10px;
+    padding-left: 30px;
 }
 .fea-pro-grd-btn.mail a i{
     left: 16px;
@@ -671,6 +672,10 @@ span.select2.select2-container.select2-container--default {
     .hm-date-end-inr:after{
         left: 30px;
     }
+    
+    .fea-pro-grd-btn.whatsapp a{
+        padding-right: 10px;
+    }
 }
 @media(max-width: 1399px){
     .car-offer-sec{
@@ -711,6 +716,21 @@ span.select2.select2-container.select2-container--default {
     .car-offer-rgt-img {
         width: 50%;
     }
+    
+    .fea-pro-grds-button {
+        left: 10px;
+        right: 10px;
+    }
+    .fea-pro-grd-btn a{
+        min-width: 95px;
+        font-size: 13px;
+    }
+    .fea-pro-grd-btn a i{
+        margin-top: -1px;
+    }
+    .fea-pro-grd-btn a i img{
+        max-width: 15px;
+    }
 }
 
 @media(max-width: 1023px){
@@ -735,7 +755,11 @@ span.select2.select2-container.select2-container--default {
         left: 15px;
     }
     .fea-pro-grd-btn.mail a{
-        padding-left: 45px;
+        padding-left: 40px;
+    }
+    
+    .fea-pro-grd-btn.whatsapp a{
+        padding-left: 38px;
     }
 }
 
@@ -783,14 +807,18 @@ span.select2.select2-container.select2-container--default {
         left: 15px;
     }
     .fea-pro-grds-button {
-        left: 5px!important;
-        right: 5px!important;
+        left: 10px!important;
+        right: 10px!important;
     }
     .fea-pro-grd-btn.whatsapp a{
         padding-left: 35px;
     }
     .fea-pro-grd-btn.whatsapp a i {
         left: 10px;
+    }
+    
+    .fea-pro-grd-btn.whatsapp a {
+        padding-left: 32px;
     }
 }
 
@@ -799,23 +827,7 @@ span.select2.select2-container.select2-container--default {
     .fea-pro-sec {
         padding-top: 40px;
     }
-    .fea-pro-grds > ul{
-        margin-left: 0;
-        margin-right: 0;
-        display: block;
-    }
-    .fea-pro-grds > ul > li {
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 50px;
-    }
-    .fea-pro-grds > ul > li .fea-pro-grd-item{
-        max-width: 375px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    
     .hm-bnr-info-inr{
         padding: 0 0;
         flex-wrap: wrap;
@@ -872,7 +884,69 @@ span.select2.select2-container.select2-container--default {
     .promotion-grds-sec-ctlr {
         padding-top: 30px;
     }
+    .hm-page-bnr-des-inr{
+        max-width: 500px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fea-pro-grd-btn a {
+        min-width: 90px;
+        font-size: 12px;
+        padding-left: 30px;
+    }
+    .fea-pro-grd-btn a i{
+        left: 9px;
+    }
+    .fea-pro-grd-btn a i img {
+        max-width: 13px;
+    }
+    .fea-pro-grds > ul {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .fea-pro-grds > ul > li {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .fea-pro-grd-btn a i {
+        margin-top: 0;
+    }
+    .fea-pro-grd-btn.whatsapp a i {
+        left: 6px;
+    }
+    .fea-pro-grd-btn.whatsapp a {
+        padding-left: 25px;
+    }
+    .fea-pro-grd-btn.mail a i {
+        left: 10px;
+    }
+    .fea-pro-grd-btn.mail a {
+        padding-left: 30px;
+    }
 }
+
+@media(max-width: 639px){
+    .fea-pro-grds > ul{
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+    }
+    .fea-pro-grds > ul > li {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 50px;
+    }
+    .fea-pro-grds > ul > li .fea-pro-grd-item{
+        max-width: 300px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
 @media(max-width: 575px){
     .car-offer-sec {
         padding: 40px 0 80px;
@@ -908,11 +982,11 @@ span.select2.select2-container.select2-container--default {
     .fea-pro-grd-btn a i{
         left: 50%;
         transform: translate(-50%, -50%);
-        margin-left: -30px;
+        margin-left: -25px;
     }
     .fea-pro-grd-btn.whatsapp a i {
         left: 50%;
-        margin-left: -45px;
+        margin-left: -35px;
     }
     .fea-pro-grd-btn.mail a i {
         left: 50%;
@@ -969,6 +1043,23 @@ span.select2.select2-container.select2-container--default {
     .hm-date-end input[type="text"]{
         height: 50px;
     }
+    .hm-page-bnr-des-inr{
+        max-width: 230px;
+    }
+    .fleets-page-ctlr .fea-pro-grds-button {
+        left: 0!important;
+        right: 0!important;
+    }
+    .fleets-page-ctlr .fea-pro-grd-btn.whatsapp a i {
+        left: 50%;
+        margin-left: -36px;
+    }
+    .fea-pro-grd-btn.mail a i {
+        left: 50%;
+        margin-left: -20px;
+        margin-top: -2px;
+    }
+
 }
 
 
