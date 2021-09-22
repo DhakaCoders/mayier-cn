@@ -263,15 +263,25 @@ $(window).resize(function(){
 
 /*start of Shariful*/
 
-$('.select-2-cntlr').select2();
+if($('.select-2-cntlr').length ){
+  $('.select-2-cntlr').select2();
+}
 
-$('.start-flatpickr').flatpickr({
-  disableMobile: true,
-});
 
-$('.end-flatpickr').flatpickr({
-  disableMobile: true,
-});
+if($('.start-flatpickr').length ){
+  $('.start-flatpickr').flatpickr({
+    disableMobile: true,
+  }); 
+}
+
+
+if($('.end-flatpickr').length ){
+  $('.end-flatpickr').flatpickr({
+    disableMobile: true,
+  });
+}
+
+
 
 if (windowWidth > 767) {
   if( $('.hm-page-banner').length ){
