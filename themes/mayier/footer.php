@@ -5,9 +5,13 @@
   }else{
     $logo_tag = '';
   }
+  $fttext = get_field('fttext', 'options');
   $telephone = get_field('telephone', 'options');
   $mobile = get_field('mobile', 'options');
   $email = get_field('emailaddres', 'options');
+  $address = get_field('address', 'options');
+  $gurl = get_field('gurl', 'options');
+  $gmaplink = !empty($gurl)?$gurl: 'javascript:void()';
   $smedias = get_field('socialinfo', 'options');
   $copyright_text = get_field('copyright_text', 'options');
 ?>
@@ -18,68 +22,59 @@
         <div class="col-md-12">
           <div class="ftr-top-cntlr clearfix">
             <div class="ftr-col ftr-col-01">
+              <?php if( !empty($logo_tag) ): ?>
               <div class="ftr-logo">
-                <a href="#">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/ftr-logo.png" alt="">
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                  <?php echo $logo_tag; ?>
                 </a>
               </div>
+              <?php endif; ?>
             </div>
+            <?php if( !empty($fttext) ): ?>
             <div class="ftr-col ftr-col-02">
               <div class="ftr-col-desc">
-                <p>We know the difference is in the details and that’s why our car rental services, in the tourism and business industry, stand out for their quality and good taste, to offer you an unique experience</p>
+                <?php echo wpautop($fttext); ?>
               </div>
             </div>
+            <?php endif; ?>
             <div class="ftr-col ftr-col-03">
-              <h6 class="fl-h6 ftr-col-title">Quick Links</h6>
+              <h6 class="fl-h6 ftr-col-title"><?php _e('Quick Links', 'mayier'); ?></h6>
               <div class="ftr-menu">
-                <ul class="reset-list">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Property for Buy</a></li>
-                  <li><a href="#">Property for Rent</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Our Team</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
+                <?php 
+                  $ftmenuOptions1 = array( 
+                      'theme_location' => 'cbv_footer_menu1', 
+                      'menu_class' => 'reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $ftmenuOptions1 ); 
+                ?>
               </div>
             </div>
             <div class="ftr-col ftr-col-04">
-              <h6 class="fl-h6 ftr-col-title">View by types</h6>
+              <h6 class="fl-h6 ftr-col-title"><?php _e('View by types', 'mayier'); ?></h6>
               <div class="ftr-type">
-                <ul class="reset-list">
-                  <li><a href="#">Sedan</a></li>
-                  <li><a href="#">Hatchback</a></li>
-                  <li><a href="#">Suv</a></li>
-                  <li><a href="#">4 Wheel</a></li>
-                  <li><a href="#">Crossover</a></li>
-                  <li><a href="#">Van</a></li>
-                </ul>
+                <?php 
+                  $ftmenuOptions2 = array( 
+                      'theme_location' => 'cbv_footer_menu2', 
+                      'menu_class' => 'reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $ftmenuOptions2 ); 
+                ?>
               </div>
             </div>
             <div class="ftr-col ftr-col-05">
-              <h6 class="fl-h6 ftr-col-title">Contact</h6>
+              <h6 class="fl-h6 ftr-col-title"><?php _e('Contact', 'mayier'); ?></h6>
               <div class="ftr-details">
                 <ul class="reset-list">
-                  <li>
-                    <div class="ftr-details-col">
-                      <span>Phone: <a href="tel:+97140000000">+971 4 000 0000</a></span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="ftr-details-col">
-                      <span>Mobile: <a href="tel:+971504587321">+971 50 458 7321</a></span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="ftr-details-col">
-                      <span>Email: <a href="mailto:info@mayier.ae">info@mayier.ae</a></span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="ftr-details-col">
-                      <span><a href="#" target="_blank">Dubai, UAE</a></span>
-                    </div>
-                  </li>
+                  <?php 
+                    if( !empty($telephone) ) printf('<li><div class="ftr-details-col"><span>Phone: <a href="tel:%s">%s</a></span></div></li>', phone_preg($telephone), $telephone); 
+                    if( !empty($mobile) ) printf('<li><div class="ftr-details-col"><span>Mobile: <a href="tel:%s">%s</a></span></div></li>', phone_preg($mobile), $mobile); 
+                    if( !empty($email) ) printf('<li><div class="ftr-details-col"><span>Email: <a href="mailto:%s">%s</a></span></div></li>', $email, $email); 
+                    if( !empty($address) ) printf('<li><div class="ftr-details-col"><span><a href="%s" target="_blank">%s</a></span></div></li>', $gmaplink, $address); 
+                  ?>
                 </ul>
               </div>
             </div>
@@ -95,22 +90,22 @@
           <div class="ftr-btm-cntlr">
             <div class="ftr-btm-lft">
               <div class="ftr-copyright">
-                <p>Copyright &copy; Mayier International Car Rental LLC</p>
+                <?php if( !empty( $copyright_text ) ) printf( '<p>%s</p>', $copyright_text); ?> 
               </div>
               <div class="ftr-btm-nav">
-                <ul class="reset-list">
-                  <li><a href="#">Terms & Conditions</a></li>
-                  <li><a href="#">Privacy & Cookies</a></li>
-                </ul>
+              <?php 
+                $copymenuOptions = array( 
+                    'theme_location' => 'cbv_copyright_menu', 
+                    'menu_class' => 'reset-list',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $copymenuOptions ); 
+              ?>
               </div>
             </div>
             <div class="ftr-socials">
               <ul class="reset-list">
-                <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a target="_blank" href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a target="_blank" href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a target="_blank" href="#"><i class="fab fa-youtube"></i></a></li>
               <?php 
                 if( !empty($smedias['facebook_url']) ) printf('<li><a target="_blank" href="%s"><i class="fab fa-facebook-f"></i></a></li>', $smedias['facebook_url']); 
                 if( !empty($smedias['linkedin_url']) ) printf('<li><a target="_blank" href="%s"><i class="fab fa-linkedin-in"></i></a></li>', $smedias['facebook_url']); 

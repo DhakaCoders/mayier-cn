@@ -26,8 +26,8 @@ $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$
 $logo_tag = '';
 }
 $telephone = get_field('telephone', 'options');
-$whatsapp = get_field('whatsapp', 'options');
-$email = get_field('emailaddres', 'options');
+$schedule = get_field('schedulesec', 'options');
+$email = get_field('booking_email', 'options');
 ?> 
 <!-- Main Header-->
 <header class="main-header">
@@ -41,26 +41,40 @@ $email = get_field('emailaddres', 'options');
                   <div class="main-box clearfix">
                       <!--Logo-->
                       <div class="logo-box">
-                          <div class="logo"><a href="index.html" title="MAB CONTRACTING L.L.C"><img src="<?php echo THEME_URI; ?>/assets/images/logo.png" alt="" title=""></a></div>
+                         <?php if( !empty($logo_tag) ): ?>
+                          <div class="logo">
+                            <a href="<?php echo esc_url(home_url('/')); ?>">
+                              <?php echo $logo_tag; ?>
+                            </a>
+                          </div>
+                          <?php endif; ?>
                       </div>
                       <div class="upper-right">
                           <div class="top-info clearfix">
                               <ul class="clearfix">
+                                <?php if( !empty($telephone) ): ?>
                                   <li class="phone">
                                     <span class="icon"><img src="<?php echo THEME_URI; ?>/assets/images/tel-icon.png" alt=""></span>
-                                    <span class="subtitle">Call Us Today!</span>
-                                    <a href="tel:+971500000000">+971 50 000 0000</a>
+                                    <span class="subtitle"><?php _e('Call Us Today!', 'mayier'); ?></span>
+                                    <a href="tel:<?php echo phone_preg($telephone); ?>"><?php echo $telephone; ?></a>
                                   </li>
+                                  <?php endif; ?>
+                                  <?php if( !empty($telephone) ): ?>
                                   <li class="email">
                                     <span class="icon"><img src="<?php echo THEME_URI; ?>/assets/images/mail-icon.png" alt=""></span>
-                                    <span class="subtitle">Book via Email</span>
-                                    <a href="mailto:booking@mayier.ae">booking@mayier.ae</a>
+                                    <span class="subtitle"><?php _e('Book via Email', 'mayier'); ?></span>
+                                    <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
                                   </li>
+                                  <?php endif; ?>
+                                  <?php if( !empty($schedule) ): ?>
                                   <li class="hdr-time">
                                     <span class="icon"><img src="<?php echo THEME_URI; ?>/assets/images/time-icon.png" alt=""></span>
-                                    <span class="subtitle">Sat to Thu</span>
-                                    <a>9:00am to 6:00pm</a>
+                                    <?php 
+                                      if( !empty($schedule['title']) ) printf('<span class="subtitle">%s</span>', $schedule['title']); 
+                                      if( !empty($schedule['time']) ) printf('<a>%s</a>', $schedule['time']); 
+                                    ?>
                                   </li>
+                                  <?php endif; ?>
                               </ul>
                           </div>
                           <!--Nav Outer-->
@@ -74,21 +88,15 @@ $email = get_field('emailaddres', 'options');
                                   </div>
                                   
                                   <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
-                                      <ul class="navigation clearfix">
-                                          <li class="current-menu-item"><a href="#">HOME</a></li>
-                                          <li><a href="#">Our Fleets</a></li>
-                                          <li class="menu-item-has-children">
-                                            <a href="#">Lease</a>
-                                            <ul class="sub-menu">
-                                              <li><a href="#">Sub Menu 1</a></li>
-                                              <li><a href="#">Sub Menu 2</a></li>
-                                              <li><a href="#">Sub Menu 3</a></li>
-                                            </ul>
-                                          </li>
-                                          <li><a href="#">Promotions</a></li>
-                                          <li><a href="#">About Us</a></li>
-                                          <li><a href="#">Contact us</a></li>
-                                      </ul>
+                                    <?php 
+                                      $menuOptions = array( 
+                                          'theme_location' => 'cbv_main_menu', 
+                                          'menu_class' => 'navigation clearfix',
+                                          'container' => '',
+                                          'container_class' => ''
+                                        );
+                                      wp_nav_menu( $menuOptions ); 
+                                    ?>
                                   </div>
                               </nav>
                               <!-- Main Menu End-->

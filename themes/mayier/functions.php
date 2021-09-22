@@ -38,7 +38,7 @@ if( !function_exists('cbv_theme_setup') ){
             'cbv_main_menu' => __( 'Main Menu', 'mayier' ),
             'cbv_mobile_main_menu' => __( 'Mobile Menu', 'mayier' ),
             'cbv_footer_menu1' => __( 'Footer Menu 1', 'mayier' ),
-            'cbv_footer_menu1' => __( 'Footer Menu 2', 'mayier' ),
+            'cbv_footer_menu2' => __( 'Footer Menu 2', 'mayier' ),
             'cbv_copyright_menu' => __( 'Copyright', 'mayier' ),
         ) );
 
@@ -56,9 +56,11 @@ function cbv_theme_scripts(){
     include_once( THEME_DIR . '/enq-scripts/fonts.php' );
     if( !is_front_page() ) include_once( THEME_DIR . '/enq-scripts/fancybox.php' );
     include_once( THEME_DIR . '/enq-scripts/slick.php' );
+    include_once( THEME_DIR . '/enq-scripts/google.maps.php' );
     include_once( THEME_DIR . '/enq-scripts/matchheight.php' );
     include_once( THEME_DIR . '/enq-scripts/animate.php' );
     include_once( THEME_DIR . '/enq-scripts/select2.php' );
+    include_once( THEME_DIR . '/enq-scripts/flatpickr.php' );
     include_once( THEME_DIR . '/enq-scripts/theme.default.php' );
 }
 
