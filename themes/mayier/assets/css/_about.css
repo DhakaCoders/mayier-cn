@@ -2,6 +2,7 @@
     position: relative;
     margin-top: 80px;
     margin-bottom: 146px;
+    min-height: 564px;
 }
 .about-us-lft-img-ctlr{
     position: absolute;
@@ -370,7 +371,7 @@ label.wpforms-input-icon.phone i {
     .about-us-sec {
         margin-top: 70px;
         margin-bottom: 130px;
-        min-height: 564px;
+        min-height: 500px;
     }
     .about-us-des h2{
         margin-top: 40px;
@@ -410,10 +411,6 @@ label.wpforms-input-icon.phone i {
     .luxury-fleets-sec-rgt-img-ctlr{
         max-width: 380px;
     }
-    .about-us-sec {
-        margin-top: 65px;
-        margin-bottom: 120px;
-    }
     .about-us-des h2{
         margin-top: 35px;
     }
@@ -440,8 +437,9 @@ label.wpforms-input-icon.phone i {
         max-width: 365px;
     }
     .about-us-sec {
-        margin-top: 60px;
-        margin-bottom: 110px;
+        margin-top: 65px;
+        margin-bottom: 120px;
+        min-height: 490px;
     }
     .about-us-des h2 {
         margin-top: 30px;
@@ -491,8 +489,9 @@ label.wpforms-input-icon.phone i {
         max-width: 356px;
     }
     .about-us-sec {
-        margin-top: 55px;
-        margin-bottom: 95px;
+        margin-top: 60px;
+        margin-bottom: 110px;
+        min-height: 470px;
     }
     .about-us-des h2 {
         margin-top: 25px;
@@ -527,7 +526,8 @@ label.wpforms-input-icon.phone i {
         max-width: 356px;
     }
     .about-us-sec {
-        margin-bottom: 85px;
+        margin-bottom: 100px;
+        min-height: 460px;
     }
     .about-us-des h2 {
         margin-top: 20px;
@@ -549,8 +549,9 @@ label.wpforms-input-icon.phone i {
 }
 @media (max-width: 1199px){
     .about-us-sec {
-        margin-top: 50px;
-        margin-bottom: 75px;
+        margin-top: 55px;
+        margin-bottom: 85px;
+        min-width: 410px;
     }
     .about-us-des h2 {
         margin-top: 15px;
@@ -660,7 +661,7 @@ label.wpforms-input-icon.phone i {
 }
 @media (max-width: 767px){
     .about-us-sec {
-        margin-top: 35px;
+        margin-top: 40px;
         margin-bottom: 55px;
     }
     .about-us-lft-img-ctlr{
