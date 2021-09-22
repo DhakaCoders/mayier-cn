@@ -127,6 +127,7 @@ get_template_part('templates/breadcrumbs');
           <?php 
           	$fleetsbrandIcons = $fleetsbrand['select_brand'];
 		  ?>
+
           <div class="brand-cntlr">
             <ul class="reset-list">
 			<?php 
@@ -143,6 +144,7 @@ get_template_part('templates/breadcrumbs');
                 </div>
               </li>
              <?php } ?>              
+
             </ul>
           </div>
         </div>
