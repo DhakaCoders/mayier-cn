@@ -699,6 +699,7 @@ label.wpforms-input-icon.phone i {
         width: 100%;
         margin-left: auto;
         padding-bottom: 30px;
+        display: none;
     }
     .luxury-brand-con .brand-cntlr {
         padding-right: 0;
@@ -711,8 +712,8 @@ label.wpforms-input-icon.phone i {
         padding-bottom: 30px;
     }
     .luxury-fleets-sec {
-        padding-top: 35px;
-        padding-bottom: 35px;
+        padding-bottom: 40px;
+        min-height: auto;
     }
     .brand-cntlr ul {
         margin: 0 -20px;
