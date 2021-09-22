@@ -125,56 +125,24 @@ get_template_part('templates/breadcrumbs');
 
 
           <?php 
-          	$fleetsbrandIDS = $fleetsbrand['select_brand'];
-          	$terms = get_terms( array(
-            'taxonomy' => 'brand',
-            'hide_empty' => false,
-            'include' => $fleetsbrandIDS
-            ) );
-			?>
-
+          	$fleetsbrandIcons = $fleetsbrand['select_brand'];
+		  ?>
           <div class="brand-cntlr">
             <ul class="reset-list">
 			<?php 
                 $brandiconimg_src = '';
-                foreach ( $terms as $term ) { 
-                $img_id = get_field('image', $term, false); 
-                if( !empty($img_id) ) $brandiconimg_src = cbv_get_image_tag( $img_id);
+                foreach ( $fleetsbrandIcons as $fleetsbrandIcon ) { 
+                $img_id = get_field('image', $fleetsbrandIcon, false); 
+                if( !empty($img_id) ) $brandiconimg_src = cbv_get_image_tag( $fleetsbrandIcon);
             ?>
               <li>
                 <div class="brand-item">
                   <a class="mHc" href="#">
-                  	<!-- <img src="<?php echo THEME_URI; ?>/assets/images/brand-1.png" alt=""> -->
                   	<?php echo  $brandiconimg_src; ?>
                   </a> 
                 </div>
               </li>
              <?php } ?>              
-         <!-- <li>
-                <div class="brand-item">
-                  <a class="mHc" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/brand-2.png" alt=""></a>
-                </div>
-              </li>
-              <li>
-                <div class="brand-item">
-                  <a class="mHc" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/brand-3.png" alt=""></a> 
-                </div>
-              </li>
-              <li>
-                <div class="brand-item">
-                  <a class="mHc" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/brand-4.png" alt=""></a>
-                </div>
-              </li>
-              <li>
-                <div class="brand-item">
-                  <a class="mHc" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/brand-5.png" alt=""></a> 
-                </div>
-              </li>
-              <li>
-                <div class="brand-item">
-                  <a class="mHc" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/brand-6.png" alt=""></a> 
-                </div>
-              </li> -->
             </ul>
           </div>
         </div>
