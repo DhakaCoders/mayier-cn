@@ -11,7 +11,7 @@ get_template_part('templates/breadcrumbs');
       <div class="col-md-12">
         <?php 
             if( !empty($page_title) ) printf('<h1 class="peh-title fl-h1">%s</h1>', $page_title); 
-          ?>
+        ?>
       </div>
     </div>
   </div>

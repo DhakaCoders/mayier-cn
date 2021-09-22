@@ -197,26 +197,13 @@ function get_title_by_page_template( $pagetemplate ){
   return $post_title;
 }
 
-function banner_placeholder($format = 'src'){
+function fleet_placeholder($format = 'src'){
   $placehoder = get_field('placeholder', 'options');
   if( !empty($placehoder) ){
       if( $format == 'src' ){
-        $placeholder = !empty($placehoder['default_banner'])? cbv_get_image_src($placehoder['default_banner']):'';
+        $placeholder = !empty($placehoder['fleet'])? cbv_get_image_src($placehoder['fleet']):'';
       }else{
-        $placeholder = !empty($placehoder['default_banner'])? cbv_get_image_tag($placehoder['default_banner']):'';
-      }
-      return $placeholder;
-  }
-  return '';
-
-}
-function product_placeholder($format = 'src'){
-  $placehoder = get_field('placeholder', 'options');
-  if( !empty($placehoder) ){
-      if( $format == 'src' ){
-        $placeholder = !empty($placehoder['product'])? cbv_get_image_src($placehoder['product']):'';
-      }else{
-        $placeholder = !empty($placehoder['product'])? cbv_get_image_tag($placehoder['product']):'';
+        $placeholder = !empty($placehoder['fleet'])? cbv_get_image_tag($placehoder['fleet']):'';
       }
       return $placeholder;
   }
