@@ -370,6 +370,7 @@ label.wpforms-input-icon.phone i {
     .about-us-sec {
         margin-top: 70px;
         margin-bottom: 130px;
+        min-height: 564px;
     }
     .about-us-des h2{
         margin-top: 40px;
