@@ -9,6 +9,8 @@ $page_title = !empty($customtitle)? $customtitle: get_the_title($thisID);
 get_template_part('templates/breadcrumbs');
 $shortcode = get_field('shortcode', $thisID);
 $mapcode = get_field('mapcode', $thisID);
+
+$schedule = get_field('schedulesec', 'options');
 ?>
 
 
@@ -36,10 +38,19 @@ $mapcode = get_field('mapcode', $thisID);
                     <i><img src="<?php echo THEME_URI; ?>/assets/images/location-icon.png" alt=""></i>
                     <a href="#">Office 1001, Building Name,<br>Business Bay, Dubai, UAE</a>
                   </div>
+                  <?php if( !empty($schedule) ): ?>
                   <div class="cnt-time cnt-dtails">
-                    <i><img src="<?php echo THEME_URI; ?>/assets/images/time-icon.png" alt=""></i>
-                    <span>Sat to Thu <br>9:00am to 6:00pm</span>
+                    <i>
+                      <img src="<?php echo THEME_URI; ?>/assets/images/time-icon.png" alt="">
+                    </i>
+                    <div class="cnt-time-inr">
+                      <?php 
+                        if( !empty($schedule['title']) ) printf('<span>%s</span>', $schedule['title']); 
+                        if( !empty($schedule['time']) ) printf('<span>%s</span>', $schedule['time']); 
+                      ?>
+                    </div>
                   </div>
+                  <?php endif; ?>
                 </div>
               </div>
             </div>
