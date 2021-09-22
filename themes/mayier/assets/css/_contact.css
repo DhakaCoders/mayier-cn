@@ -91,6 +91,7 @@
     left: 4px;
     height: 42px;
     width: 42px;
+    margin-top: -2px;
 } 
 .contact-form-info-cntlr,
 .contact-form-dsc-wrp {
