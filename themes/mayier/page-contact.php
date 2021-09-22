@@ -3,6 +3,17 @@
 Template Name: Contact Us
 */
 get_header(); 
+$thisID = get_the_ID();
+$customtitle = get_field('custom_page_title', $thisID);
+$page_title = !empty($customtitle)? $customtitle: get_the_title($thisID);
+get_template_part('templates/breadcrumbs');
+
+$address = get_field('address', 'options');
+$gurl = get_field('gurl', 'options');
+$gmaplink = !empty($gurl)?$gurl: 'javascript:void()';
+$telephone = get_field('telephone', 'options');
+$booking_email = get_field('booking_email', 'options');
+$booking_email = get_field('booking_email', 'options');
 ?>
 
 
@@ -12,7 +23,7 @@ get_header();
       <div class="col-md-12">
         <div class="contact-forn-con-cntlr">
           <div class="contact-sec-entry-hdr">
-            <h1 class="contact-sec-entry-hdr-title fl-h1">Contact us</h1>
+            <h1 class="contact-sec-entry-hdr-title fl-h1"><?php echo $page_title; ?></h1>
           </div>
           <div class="contect-form-block clearfix">
             <div class="contact-form-lft">
