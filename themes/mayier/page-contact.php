@@ -13,7 +13,6 @@ $gurl = get_field('gurl', 'options');
 $gmaplink = !empty($gurl)?$gurl: 'javascript:void()';
 $telephone = get_field('telephone', 'options');
 $booking_email = get_field('booking_email', 'options');
-$booking_email = get_field('booking_email', 'options');
 ?>
 
 
