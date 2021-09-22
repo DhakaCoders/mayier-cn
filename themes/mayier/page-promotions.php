@@ -35,7 +35,6 @@ get_template_part('templates/breadcrumbs');
         while ( $loop->have_posts() ) : $loop->the_post(); 
           $promotionsFeaImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
           $promotionsLink = get_field('promo_link', $thisID);
-          print_r($promotionsLink);
       ?>
       <li>
         <div class="promotions-grd-item">
