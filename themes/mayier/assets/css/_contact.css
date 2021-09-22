@@ -29,7 +29,7 @@
     margin-bottom: 60px;
     position: relative;
 }
-.cnt-dtails span,
+.cnt-dtails .cnt-time-inr,
 .cnt-dtails a {
     position: relative;
     padding-left: 72px;
@@ -38,6 +38,9 @@
     line-height: 1.2;
     color: #282526;
     color: #181818;
+}
+.cnt-time-inr span {
+    display: block;
 }
 .cnt-dtails a:hover{
     color: #f85700;
@@ -125,7 +128,7 @@
     border: 1px solid #c8c8c7;
     box-sizing: border-box;
     padding: 12px 16px 12px 16px;
-    padding-right: 40px;
+    padding-right: 20px;
     color: #777F84;
     font-weight: 400;
     font-size: 16px;
