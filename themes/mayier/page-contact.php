@@ -7,12 +7,8 @@ $thisID = get_the_ID();
 $customtitle = get_field('custom_page_title', $thisID);
 $page_title = !empty($customtitle)? $customtitle: get_the_title($thisID);
 get_template_part('templates/breadcrumbs');
-
-$address = get_field('address', 'options');
-$gurl = get_field('gurl', 'options');
-$gmaplink = !empty($gurl)?$gurl: 'javascript:void()';
-$telephone = get_field('telephone', 'options');
-$booking_email = get_field('booking_email', 'options');
+$shortcode = get_field('shortcode', $thisID);
+$mapcode = get_field('mapcode', $thisID);
 ?>
 
 
@@ -50,35 +46,7 @@ $booking_email = get_field('booking_email', 'options');
             <div class="contact-form-rgt">
               <div class="contact-form-dsc-wrp">
                 <div class="contact-form-wrp clearfix">
-                  <div class="wpforms-container">
-                    <div class="wpforms-form needs-validation novalidate">
-                      <div class="wpforms-field-container">
-                        <div class="wpforms-field">
-                          <input type="text" name="name" placeholder="Full Name *" required="">
-                          <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Check this field!</label>
-                        </div>
-                        <div class="wpforms-field">
-                          <input type="text" name="text" placeholder="Phone *" required="">
-                          <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Check this field!</label>
-                        </div>
-                        <div class="wpforms-field">
-                          <input type="text" name="text" placeholder="Company Name" required="">
-                          <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Check this field!</label>
-                        </div>
-                        
-                        <div class="wpforms-field">
-                          <input type="email" name="email" placeholder="Email *" required="">
-                          <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Check this field!</label>
-                        </div>
-                        <div class="wpforms-field wpforms-field-textarea">
-                          <textarea name="message" placeholder="Message"></textarea>
-                        </div>
-                      </div>
-                      <div class="wpforms-submit-container">
-                        <button type="submit" name="submit" class="wpforms-submit">Submit</button>
-                      </div>
-                    </div>
-                  </div>
+                  <?php if( !empty($shortcode) ) echo do_shortcode($shortcode); ?>
                 </div>
               </div>
             </div>
@@ -90,14 +58,15 @@ $booking_email = get_field('booking_email', 'options');
 </section>
 
 
-
+<?php if( $mapcode ): ?>
 <section class="contact-google-map-sec-wrp">
   <div class="contact-google-map-wrp">
     <div class="contact-google-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14442.15722952595!2d55.265597128817376!3d25.185029010387396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f682def25f457%3A0x3dd4c4097970950e!2sBusiness%20Bay%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sbd!4v1632120885221!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <?php echo $mapcode; ?>
     </div> 
   </div>
 </section>
+<?php endif; ?>
 
 
 <?php get_footer(); ?>
