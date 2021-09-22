@@ -141,10 +141,10 @@ ol li::before {
 .breadcrumb-sec-inr ul {
     display: flex;
     align-items: center;
-    margin: 0 -16px;
+    margin: 0 -15px;
 }
 .breadcrumb-sec-inr ul li {
-    padding: 0 16px;
+    padding: 0 15px;
     position: relative;
     line-height: 0!important;
 }
