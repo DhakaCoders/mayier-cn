@@ -373,7 +373,7 @@ textarea {
         font-size: 15px;
     }
     .contact-google-map iframe{
-        height: 470px;
+        height: 500px;
     }
 }
 @media (max-width: 991px){
@@ -384,7 +384,7 @@ textarea {
         margin-bottom: 40px;
     }
     .contact-google-map iframe{
-        height: 420px;
+        height: 470px;
     }
 }
 @media (max-width: 767px){
@@ -401,7 +401,7 @@ textarea {
         width: 52%;
     }
     .contact-google-map iframe{
-        height: 380px;
+        height: 430px;
     }
 
 }
@@ -429,7 +429,7 @@ textarea {
         padding-bottom: 30px;
     }
     .contact-google-map iframe{
-        height: 350px;
+        height: 400px;
     }
 
 }
