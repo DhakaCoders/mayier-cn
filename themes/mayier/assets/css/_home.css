@@ -382,9 +382,15 @@ span.select2.select2-container.select2-container--default {
     padding: 20px 10px;
     border-radius: 15px;
     position: relative;
+    -webkit-box-shadow: 2px 2px 15px 5px rgba(242,231,221,0.75); 
+    box-shadow: 2px 2px 15px 5px rgba(242,231,221,0.75);
+}
+
+.fleets-page-ctlr .fea-pro-grds > ul > li .fea-pro-grd-item{
     -webkit-box-shadow: 2px 2px 15px 10px rgba(246,246,246,0.76); 
     box-shadow: 2px 2px 15px 10px rgba(246,246,246,0.76);
 }
+
 
 .fea-pro-hdr{
     padding-bottom: 1px;
