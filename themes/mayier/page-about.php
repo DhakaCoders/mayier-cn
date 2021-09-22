@@ -53,7 +53,6 @@ get_template_part('templates/breadcrumbs');
 		$servicessec = get_field('servicessec', $thisID);
 		if($servicessec):
 ?>
-
 <section class="about-us-rental-services-sec">
   <div class="container">
     <div class="row">
@@ -73,13 +72,13 @@ get_template_part('templates/breadcrumbs');
             <ul class="reset-list">
         	<?php 
         		foreach($services as $service): 
-      			$serviceImg = !empty($service['image'])? cbv_get_image_tag( $service['image'] ): ''; 
+      			$serviceIcon = !empty($service['icon'])? cbv_get_image_tag( $service['icon'] ): ''; 
       		?>
               <li>
                 <div class="rental-services-grid-item">
                     <div class="rental-services-grid-item-img mHc">
                       <i>
-                        <?php echo $serviceImg; ?>
+                        <?php echo $serviceIcon; ?>
                       </i>
                     </div>
                     <?php 
