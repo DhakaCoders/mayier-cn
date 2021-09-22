@@ -9,10 +9,20 @@ $page_title = !empty($customtitle)? $customtitle: get_the_title($thisID);
 get_template_part('templates/breadcrumbs');
 ?>
 
+
+<?php
+	$showhideintro = get_field('showhideintro', $thisID);
+	if($showhideintro): 
+		$intro = get_field('introsec', $thisID);
+		if($intro):
+?>
+
 <section class="about-us-sec">
-  <div class="about-us-lft-img-ctlr">
-    <img src="<?php echo THEME_URI; ?>/assets/images/about-us-1.jpg" alt="">
-  </div>
+	<?php if( !empty($intro['image']) ): ?>
+	  <div class="about-us-lft-img-ctlr">
+	    <?php echo cbv_get_image_tag( $intro['image'] ); ?>
+	  </div>
+  	<?php endif; ?>
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -24,19 +34,16 @@ get_template_part('templates/breadcrumbs');
             <h1 class="about-us-heading-title fl-h1"><?php echo $page_title; ?></h1>
           </div>
           <div class="about-us-des">
-            <h2>Mayier International Rent a Car</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam from edit that posibiliteies bla truc from now</p>
-            <p>Pro inimicus sapientem an, ad cibo velit mollis mei, ne vim adhuc gubergren. Vis no intellegebat voluptatibus, vim an partem admodum copiosae, has ei mutat maluisset comprehensam.Lorem ipsum dolor sit amet, vix verterem sensibus erroribus eu, cu mel iusto iudico labore. Magna pertinax urbanitas.</p>
-            <p>Pro inimicus sapientem an, ad cibo velit mollis mei, ne vim adhuc gubergren. Vis no intellegebat voluptatibus, vim an partem admodum copiosae, has ei mutat maluisset comprehensam.Lorem ipsum dolor sit amet, vix verterem sensibus erroribus eu, cu mel iusto iudico labore. Magna pertinax urbanitas.</p>
-            <h2>Core Values</h2>
-            <p>We go through extensive factory training so that we may provide you with the knowledge you need to make an educated decision in choosing the vehicle that is right for your lifestyle.</p>
+          	<?php  
+              if( !empty($intro['description']) ) echo wpautop( $intro['description'] );
+            ?>
           </div>
         </div>
       </div>
     </div>
   </div> 
 </section>
-
+<?php endif; endif; ?>
 
 <section class="about-us-rental-services-sec">
   <div class="container">
