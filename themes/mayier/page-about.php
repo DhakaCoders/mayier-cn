@@ -101,17 +101,28 @@ get_template_part('templates/breadcrumbs');
 <?php endif; endif; ?>
 
 
+
+<?php
+	$showhidebrand = get_field('showhidebrand', $thisID);
+	if($showhidebrand): 
+		$fleetsbrand = get_field('fleetsbrand', $thisID);
+		if($fleetsbrand):
+			$luxuryFleetsFeaImg = !empty($fleetsbrand['image'])? cbv_get_image_tag( $fleetsbrand['image'] ): ''; 
+?>
 <section class="luxury-fleets-sec">
   <div class="luxury-fleets-sec-rgt-img-ctlr">
-    <img src="<?php echo THEME_URI; ?>/assets/images/about-us-2.jpg" alt="">
+    <?php echo $luxuryFleetsFeaImg; ?>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="luxury-brand-con">
           <div class="sec-entry-hdr">
-            <h2 class="sec-entry-hdr-title fl-h1">Luxury Fleets</h2>
+            <?php 
+            if( !empty($fleetsbrand['title']) ) printf( '<h2 class="sec-entry-hdr-title fl-h1">%s</h2>', $fleetsbrand['title'] ); 
+          	?>
           </div>
+
           <div class="brand-cntlr">
             <ul class="reset-list">
               <li>
@@ -151,7 +162,7 @@ get_template_part('templates/breadcrumbs');
     </div>
   </div>
 </section>
-
+<?php endif; endif; ?>
 
 
 
