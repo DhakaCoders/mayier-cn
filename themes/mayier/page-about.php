@@ -9,10 +9,20 @@ $page_title = !empty($customtitle)? $customtitle: get_the_title($thisID);
 get_template_part('templates/breadcrumbs');
 ?>
 
+
+<?php
+	$showhideintro = get_field('showhideintro', $thisID);
+	if($showhideintro): 
+		$intro = get_field('introsec', $thisID);
+		if($intro):
+?>
+
 <section class="about-us-sec">
-  <div class="about-us-lft-img-ctlr">
-    <img src="<?php echo THEME_URI; ?>/assets/images/about-us-1.jpg" alt="">
-  </div>
+	<?php if( !empty($intro['image']) ): ?>
+	  <div class="about-us-lft-img-ctlr">
+	    <?php echo cbv_get_image_tag( $intro['image'] ); ?>
+	  </div>
+  	<?php endif; ?>
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -24,46 +34,64 @@ get_template_part('templates/breadcrumbs');
             <h1 class="about-us-heading-title fl-h1"><?php echo $page_title; ?></h1>
           </div>
           <div class="about-us-des">
-            <h2>Mayier International Rent a Car</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam from edit that posibiliteies bla truc from now</p>
-            <p>Pro inimicus sapientem an, ad cibo velit mollis mei, ne vim adhuc gubergren. Vis no intellegebat voluptatibus, vim an partem admodum copiosae, has ei mutat maluisset comprehensam.Lorem ipsum dolor sit amet, vix verterem sensibus erroribus eu, cu mel iusto iudico labore. Magna pertinax urbanitas.</p>
-            <p>Pro inimicus sapientem an, ad cibo velit mollis mei, ne vim adhuc gubergren. Vis no intellegebat voluptatibus, vim an partem admodum copiosae, has ei mutat maluisset comprehensam.Lorem ipsum dolor sit amet, vix verterem sensibus erroribus eu, cu mel iusto iudico labore. Magna pertinax urbanitas.</p>
-            <h2>Core Values</h2>
-            <p>We go through extensive factory training so that we may provide you with the knowledge you need to make an educated decision in choosing the vehicle that is right for your lifestyle.</p>
+          	<?php  
+              if( !empty($intro['description']) ) echo wpautop( $intro['description'] );
+            ?>
           </div>
         </div>
       </div>
     </div>
   </div> 
 </section>
+<?php endif; endif; ?>
 
 
+
+<?php
+	$showhideservice = get_field('showhideservice', $thisID);
+	if($showhideservice): 
+		$servicessec = get_field('servicessec', $thisID);
+		if($servicessec):
+?>
 <section class="about-us-rental-services-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="rental-services-con-cntlr">
           <div class="rental-services-sec-entry-heading">
-            <h2 class="rental-services-heading-title fl-h1">Luxury Car Rental Services</h2>
+          	<?php 
+            if( !empty($servicessec['title']) ) printf( '<h2 class="rental-services-heading-title fl-h1">%s</h2>', $servicessec['title'] ); 
+          	?>
           </div>
+
+          <?php 
+          	$services = $servicessec['services'];
+          	if($services):
+          ?>
           <div class="rental-services-grids-cntlr">
             <ul class="reset-list">
+        	<?php 
+        		foreach($services as $service): 
+      			$serviceIcon = !empty($service['icon'])? cbv_get_image_tag( $service['icon'] ): ''; 
+      		?>
               <li>
                 <div class="rental-services-grid-item">
-
                     <div class="rental-services-grid-item-img mHc">
                       <i>
-                        <img src="<?php echo THEME_URI; ?>/assets/images/luxury-img-1.png" alt="">
+                        <?php echo $serviceIcon; ?>
                       </i>
                     </div>
-                    <h3 class="fl-h4 rental-services-grid-item-title mHc1">Variety of Car Brands</h3>
+                    <?php 
+    					if( !empty($service['title']) ) printf( '<h3 class="fl-h4 rental-services-grid-item-title mHc1">%s</h3>', $service['title'] );
+    				?>
                     <div class="rental-services-grid-item-desc">
-                      <p>We go through extensive factory training so that we may provide you with the knowledge you need to make an educated decision in choosing the vehicle that is right for your lifestyle.</p>
+                    	<?php if( !empty($service['description']) ) echo wpautop( $service['description'] ); ?>
                     </div>
-
                 </div>
               </li>
-              <li>
+              <?php endforeach; ?>
+
+<!--               <li>
                 <div class="rental-services-grid-item">
 
                     <div class="rental-services-grid-item-img mHc">
@@ -92,15 +120,16 @@ get_template_part('templates/breadcrumbs');
                     </div>
 
                 </div>
-              </li>
+              </li> -->
             </ul>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<?php endif; endif; ?>
 
 
 <section class="luxury-fleets-sec">
