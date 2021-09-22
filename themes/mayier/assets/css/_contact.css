@@ -359,9 +359,6 @@ textarea {
     .contact-sec-entry-hdr-title{
         margin-bottom: 50px;
     }
-    .contact-google-map iframe{
-        height: 500px;
-    }
 }
 @media (max-width: 1199px){
     .contact-form-sec-wrp {
@@ -372,7 +369,7 @@ textarea {
         font-size: 15px;
     }
     .contact-google-map iframe{
-        height: 450px;
+        height: 470px;
     }
 }
 @media (max-width: 991px){
@@ -383,7 +380,7 @@ textarea {
         margin-bottom: 40px;
     }
     .contact-google-map iframe{
-        height: 400px;
+        height: 420px;
     }
 }
 @media (max-width: 767px){
