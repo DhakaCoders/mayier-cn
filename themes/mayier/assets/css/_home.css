@@ -349,7 +349,10 @@ span.select2.select2-container.select2-container--default {
 .fixed-whatsapp-icon{
     position: fixed;
     top: 50%;
-    right: 20px;
+    right: 18px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     z-index: 99;
 }
 .fixed-whatsapp-icon-inr{
@@ -658,6 +661,14 @@ span.select2.select2-container.select2-container--default {
     .hm-select .select2-container--default .select2-selection--single .select2-selection__rendered{
         padding-top: 20px!important;
     }
+    .hm-date-start-inr, 
+    .hm-date-end-inr{
+        padding-left: 70px;
+    }
+    .hm-date-start-inr:after, 
+    .hm-date-end-inr:after{
+        left: 30px;
+    }
 }
 @media(max-width: 1399px){
     .car-offer-sec{
@@ -678,7 +689,7 @@ span.select2.select2-container.select2-container--default {
         width: 60px;
     }
     .fixed-whatsapp-icon-inr img{
-        max-width: 35px;
+        max-width: 32px;
     }
 }
 
