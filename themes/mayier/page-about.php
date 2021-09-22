@@ -90,37 +90,6 @@ get_template_part('templates/breadcrumbs');
                 </div>
               </li>
               <?php endforeach; ?>
-
-<!--               <li>
-                <div class="rental-services-grid-item">
-
-                    <div class="rental-services-grid-item-img mHc">
-                      <i>
-                        <img src="<?php echo THEME_URI; ?>/assets/images/luxury-img-2.png" alt="">
-                      </i>
-                    </div>
-                    <h3 class="fl-h4 rental-services-grid-item-title mHc1">Best Rate Guarantee</h3>
-                    <div class="rental-services-grid-item-desc">
-                      <p>We go through extensive factory training so that we may provide you with the knowledge you need to make an educated decision in choosing the vehicle that is right for your lifestyle.</p>
-                    </div>
-
-                </div>
-              </li>
-              <li>
-                <div class="rental-services-grid-item">
-
-                    <div class="rental-services-grid-item-img mHc">
-                      <i>
-                        <img src="<?php echo THEME_URI; ?>/assets/images/luxury-img-3.png" alt="">
-                      </i>
-                    </div>
-                    <h3 class="fl-h4 rental-services-grid-item-title mHc1">Awesome Customer Support</h3>
-                    <div class="rental-services-grid-item-desc">
-                      <p>We go through extensive factory training so that we may provide you with the knowledge you need to make an educated decision in choosing the vehicle that is right for your lifestyle.</p>
-                    </div>
-
-                </div>
-              </li> -->
             </ul>
           </div>
           <?php endif; ?>
