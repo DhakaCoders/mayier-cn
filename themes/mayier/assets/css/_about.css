@@ -126,6 +126,7 @@
 .hm-brands-sec{
     padding-top: 15px;
     padding-bottom: 50px;
+    overflow: hidden;
 }
 .brand-item {
     padding-bottom: 30px;
