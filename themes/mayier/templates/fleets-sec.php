@@ -47,7 +47,6 @@ $terms = get_terms( array(
             <div class="sec-entry-hdr text-center">
               <h2 class="sec-entry-hdr-title fl-h1"><?php echo $page_title; ?></h2>
             </div>
-            <?php if( $query->have_posts() ): ?>
             <div class="fea-pro-select">
               <div class="pro-select">
                 <form action="" method="get">
@@ -60,6 +59,7 @@ $terms = get_terms( array(
                 </form>
               </div>
             </div>
+            <?php if( $query->have_posts() ): ?>
             <div class="fea-pro-grds">
               <ul class="reset-list clearfix">
               <?php 
@@ -173,11 +173,8 @@ $terms = get_terms( array(
           </div>
           <?php endif; ?>
           <?php else: ?>
-          <div class="jm-pro-grds">
-             <?php $no_results = get_field('no_results', 'options'); ?>
-              <div class="notfound"><?php echo !empty($no_results)? $no_results: __('No Results.', 'mayier'); ?></div>
-          </div>
-            <?php endif; wp_reset_postdata(); ?>
+            <div class="notfound"><?php echo _e('No Results.', 'mayier') ?></div>
+          <?php endif; wp_reset_postdata(); ?>
             <div class="fea-pro-btm-des">
               <?php the_content(); ?>
             </div>

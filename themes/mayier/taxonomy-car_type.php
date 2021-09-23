@@ -3,7 +3,30 @@ get_header();
 $currentTerm = get_queried_object();
 get_template_part('templates/breadcrumbs');
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-
+$brandQ = isset($_GET['brand']) && !empty($_GET['brand'])? $_GET['brand']: '';
+if( !empty($brandQ) && $brandQ != 'all' ){
+  $args = array(  
+      'post_type' => 'our-fleet',
+      'post_status' => 'publish',
+      'posts_per_page' => 6, 
+      'orderby' => 'title', 
+      'order' => 'desc',
+      'paged'=>$paged,
+      'tax_query' => array(
+          'relation' => 'AND',
+          array(
+              'taxonomy' => 'car_type',
+              'field'    => 'slug',
+              'terms'    => $currentTerm->slug
+          ),
+          array(
+            'taxonomy' => 'brand',
+            'field'    => 'slug',
+            'terms'    => $brandQ
+          ),
+      ),
+  );
+}else{
 $args = array(  
     'post_type' => 'our-fleet',
     'post_status' => 'publish',
@@ -13,12 +36,13 @@ $args = array(
     'paged'=>$paged,
     'tax_query' => array(
         array(
-            'taxonomy' => 'brand',
+            'taxonomy' => 'car_type',
             'field'    => 'slug',
             'terms'    => $currentTerm->slug
         ),
     ),
 );
+}
 $query = new WP_Query( $args );
 $terms = get_terms( array(
     'taxonomy' => 'brand',
@@ -34,15 +58,16 @@ $terms = get_terms( array(
             <div class="sec-entry-hdr text-center">
               <h2 class="sec-entry-hdr-title fl-h1"><?php echo $currentTerm->name; ?></h2>
             </div>
-            
             <div class="fea-pro-select">
               <div class="pro-select">
-                  <select class="pro-custom-select select-2-cntlr" id="brand_change">
+                <form action="" method="get">
+                  <select class="pro-custom-select select-2-cntlr" name="brand" onchange="javascript:this.form.submit()">
                     <option value="all" selected><?php _e('Select Car Brand', 'mayier'); ?></option>
                     <?php foreach( $terms as $term ): ?>
-                      <option value="<?php echo esc_url( get_category_link( $term->term_id ) ); ?>" <?php echo $currentTerm->slug == $term->slug?'selected':''; ?>><?php echo $term->name; ?></option>
+                      <option value="<?php echo $term->slug; ?>" <?php echo $brandQ == $term->slug?'selected':''; ?>><?php echo $term->name; ?></option>
                     <?php endforeach; ?>
                   </select>
+                </form>
               </div>
             </div>
             <?php if( $query->have_posts() ): ?>

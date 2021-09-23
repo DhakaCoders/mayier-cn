@@ -48,18 +48,7 @@ $terms = get_terms( array(
               <h2 class="sec-entry-hdr-title fl-h1"><?php echo $page_title; ?></h2>
             </div>
             <?php if( $query->have_posts() ): ?>
-            <div class="fea-pro-select">
-              <div class="pro-select">
-                <form action="" method="get">
-                  <select class="pro-custom-select select-2-cntlr" name="brand" onchange="javascript:this.form.submit()">
-                    <option value="all" selected><?php _e('Select Car Brand', 'mayier'); ?></option>
-                    <?php foreach( $terms as $term ): ?>
-                      <option value="<?php echo $term->slug; ?>" <?php echo $brandQ == $term->slug?'selected':''; ?>><?php echo $term->name; ?></option>
-                    <?php endforeach; ?>
-                  </select>
-                </form>
-              </div>
-            </div>
+              <!-- Filter -->
             <div class="fea-pro-grds">
               <ul class="reset-list clearfix">
               <?php 
