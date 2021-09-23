@@ -924,6 +924,10 @@ span.select2.select2-container.select2-container--default {
     .fea-pro-grd-btn.mail a {
         padding-left: 30px;
     }
+    .hm-bnr-img{
+        z-index: 3;
+        right: 10px;
+    }
 }
 
 @media(max-width: 639px){

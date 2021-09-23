@@ -39,7 +39,7 @@ get_template_part('templates/breadcrumbs');
         <li>
           <div class="promotions-grd-item">
             <div class="promotions-grd-item-fea-img">
-              <a href="#">
+              <a href="<?php echo $leaseLink; ?>">
                 <img src="<?php echo $leaseFeaImg[0] ?>" alt="<?php the_content(); ?>">
               </a>
             </div>
