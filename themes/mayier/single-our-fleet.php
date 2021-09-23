@@ -3,11 +3,12 @@ get_header();
 $thisID = get_the_ID();
 get_template_part('templates/breadcrumbs');
 $overview = get_field('overview', get_the_ID());
-$continfo = get_field('contactinfo', get_the_ID());
 $carparts = get_field('carparts', get_the_ID());
 $options = get_field('options', get_the_ID());
 $payments = get_field('payments', get_the_ID());
 $others = get_field('others', get_the_ID());
+$telephone = get_field('telephone', 'options');
+$whatsapp = get_field('whatsapp', 'options');
 ?>
 <section class="pro-single-sec">
   <div class="container">
@@ -36,12 +37,11 @@ $others = get_field('others', get_the_ID());
             <div class="pro-single-hding-rgt">
               <h6 class="fl-h6 pro-single-hding-title"><?php _e('BOOK NOW', 'mayier'); ?></h6>
               <div class="pro-single-hding-rgt-btn">
-                <?php if( $continfo ): ?>
                 <ul class="reset-list clearfix">
-                  <?php if( !empty($continfo['telephone']) ): ?>
+                  <?php if( !empty($telephone) ): ?>
                   <li>
                     <div class="fea-pro-grd-btn">
-                      <a href="tel:<?php echo phone_preg($continfo['telephone']); ?>">
+                      <a href="tel:<?php echo phone_preg($telephone); ?>">
                         <?php _e('Call', 'mayier'); ?>
                         <i><img src="<?php echo THEME_URI; ?>/assets/images/white-tell-icon.png"></i>
                       </a>
@@ -49,31 +49,26 @@ $others = get_field('others', get_the_ID());
                   </li>
                   <?php 
                     endif; 
-                    if( !empty($continfo['whatsapp']) ):
+                    if( !empty($whatsapp) ):
                   ?>
                   <li class="">
                     <div class="fea-pro-grd-btn whatsapp">
-                      <a href="https://wa.me/<?php echo phone_preg($continfo['whatsapp']); ?>">
+                      <a href="https://api.whatsapp.com/send?phone=<?php echo phone_preg($whatsapp); ?>">
                         <?php _e('WhatsApp', 'mayier'); ?>
                         <i><img src="<?php echo THEME_URI; ?>/assets/images/white-whatsapp-icon.png"></i>
                       </a>
                     </div>  
                   </li>
-                  <?php 
-                    endif; 
-                    if( !empty($continfo['email_address']) ):
-                  ?>
+                  <?php endif; ?>
                   <li class="">
                     <div class="fea-pro-grd-btn mail">
-                      <a href="mailto:<?php echo $continfo['email_address']; ?>">
+                      <a href="mailto:">
                         <?php _e('Email', 'mayier'); ?>
                         <i><img src="<?php echo THEME_URI; ?>/assets/images/white-mail-icon.png"></i>
                       </a>
                     </div>
                   </li>
-                  <?php endif; ?>
                 </ul>
-                <?php endif; ?>
               </div>
             </div>
           </div>
@@ -164,10 +159,10 @@ $others = get_field('others', get_the_ID());
                   <h6 class="fl-h6 pro-con-lft-btn-title"><?php _e('BOOK NOW', 'mayier'); ?></h6>
                   <div class="pro-con-lft-btn">
                     <ul class="reset-list clearfix">
-                      <?php if( !empty($continfo['telephone']) ): ?>
+                      <?php if( !empty($telephone) ): ?>
                       <li>
                         <div class="fea-pro-grd-btn">
-                          <a href="tel:<?php echo phone_preg($continfo['telephone']); ?>">
+                          <a href="tel:<?php echo phone_preg($telephone); ?>">
                             <?php _e('Call', 'mayier'); ?>
                             <i><img src="<?php echo THEME_URI; ?>/assets/images/white-tell-icon.png"></i>
                           </a>
@@ -175,29 +170,25 @@ $others = get_field('others', get_the_ID());
                       </li>
                       <?php 
                         endif; 
-                        if( !empty($continfo['whatsapp']) ):
+                        if( !empty($whatsapp) ):
                       ?>
                       <li class="">
                         <div class="fea-pro-grd-btn whatsapp">
-                          <a href="https://wa.me/<?php echo phone_preg($continfo['whatsapp']); ?>">
+                          <a href="https://api.whatsapp.com/send?phone=<?php echo phone_preg($whatsapp); ?>">
                             <?php _e('WhatsApp', 'mayier'); ?>
                             <i><img src="<?php echo THEME_URI; ?>/assets/images/white-whatsapp-icon.png"></i>
                           </a>
                         </div>  
                       </li>
-                      <?php 
-                        endif; 
-                        if( !empty($continfo['email_address']) ):
-                      ?>
+                      <?php endif; ?>
                       <li class="">
                         <div class="fea-pro-grd-btn mail">
-                          <a href="mailto:<?php echo $continfo['email_address']; ?>">
+                          <a href="mailto:">
                             <?php _e('Email', 'mayier'); ?>
                             <i><img src="<?php echo THEME_URI; ?>/assets/images/white-mail-icon.png"></i>
                           </a>
                         </div>
                       </li>
-                      <?php endif; ?>
                     </ul>
                   </div>
                 </div>
@@ -387,10 +378,10 @@ if($fleetobj){
                   </div>
                   <div class="fea-pro-grds-button">
                     <ul class="reset-list clearfix">
-                      <?php if( !empty($con_tinfo['telephone']) ): ?>
+                      <?php if( !empty($telephone) ): ?>
                       <li>
                         <div class="fea-pro-grd-btn">
-                          <a href="tel:<?php echo phone_preg($con_tinfo['telephone']); ?>">
+                          <a href="tel:<?php echo phone_preg($telephone); ?>">
                             <?php _e('Call', 'mayier'); ?>
                             <i><img src="<?php echo THEME_URI; ?>/assets/images/white-tell-icon.png"></i>
                           </a>
@@ -398,29 +389,25 @@ if($fleetobj){
                       </li>
                     <?php 
                       endif; 
-                      if( !empty($con_tinfo['whatsapp']) ):
+                      if( !empty($whatsapp) ):
                     ?>
                       <li class="">
                         <div class="fea-pro-grd-btn whatsapp">
-                          <a href="https://wa.me/<?php echo phone_preg($con_tinfo['whatsapp']); ?>">
+                          <a href="https://api.whatsapp.com/send?phone=<?php echo phone_preg($whatsapp); ?>">
                             <?php _e('WhatsApp', 'mayier'); ?>
                             <i><img src="<?php echo THEME_URI; ?>/assets/images/white-whatsapp-icon.png"></i>
                           </a>
                         </div>  
                       </li>
-                    <?php 
-                      endif; 
-                      if( !empty($con_tinfo['email_address']) ):
-                    ?>
+                    <?php endif; ?>
                       <li class="">
                         <div class="fea-pro-grd-btn mail">
-                          <a href="mailto:<?php echo $con_tinfo['email_address']; ?>">
+                          <a href="mailto:">
                             <?php _e('Email', 'mayier'); ?>
                             <i><img src="<?php echo THEME_URI; ?>/assets/images/white-mail-icon.png"></i>
                           </a>
                         </div>
                       </li>
-                      <?php endif; ?>
                     </ul>
                   </div>
                 </div>

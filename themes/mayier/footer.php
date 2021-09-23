@@ -90,7 +90,7 @@
           <div class="ftr-btm-cntlr">
             <div class="ftr-btm-lft">
               <div class="ftr-copyright">
-                <?php if( !empty( $copyright_text ) ) printf( '<p>%s</p>', $copyright_text); ?> 
+                <?php if( !empty( $copyright_text ) ) printf( '%s', $copyright_text); ?> 
               </div>
               <div class="ftr-btm-nav">
               <?php 

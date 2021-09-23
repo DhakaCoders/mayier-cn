@@ -1,11 +1,16 @@
 <?php 
 get_header();
+$telephone = get_field('telephone', 'options');
+$whatsapp = get_field('whatsapp', 'options');
+if( !empty($whatsapp) ):
 ?>
+
 <div class="fixed-whatsapp-icon">
   <div class="fixed-whatsapp-icon-inr">
-    <a href="tel:+971504587321"><img src="<?php echo THEME_URI; ?>/assets/images/whatsapp-icon-lg.png"></a>
+    <a href="https://api.whatsapp.com/send?phone=<?php echo phone_preg($whatsapp); ?>"><img src="<?php echo THEME_URI; ?>/assets/images/whatsapp-icon-lg.png"></a>
   </div>
 </div>
+<?php endif; ?>
 <?php  
   $hbanner = get_field('banner', HOMEID);
   $banner = !empty($hbanner['image'])? cbv_get_image_src( $hbanner['image'] ): '';
@@ -159,40 +164,38 @@ if($pcars):
                   </div>
                   <div class="fea-pro-grds-button">
                     <ul class="reset-list clearfix">
-                      <?php if( !empty($con_tinfo['telephone']) ): ?>
-                      <li>
-                        <div class="fea-pro-grd-btn">
-                          <a href="tel:<?php echo phone_preg($con_tinfo['telephone']); ?>">
-                            <?php _e('Call', 'mayier'); ?>
-                            <i><img src="<?php echo THEME_URI; ?>/assets/images/white-tell-icon.png"></i>
-                          </a>
-                        </div>
-                      </li>
-                    <?php 
-                      endif; 
-                      if( !empty($con_tinfo['whatsapp']) ):
-                    ?>
-                      <li class="">
-                        <div class="fea-pro-grd-btn whatsapp">
-                          <a href="https://wa.me/<?php echo phone_preg($con_tinfo['whatsapp']); ?>">
-                            <?php _e('WhatsApp', 'mayier'); ?>
-                            <i><img src="<?php echo THEME_URI; ?>/assets/images/white-whatsapp-icon.png"></i>
-                          </a>
-                        </div>  
-                      </li>
-                    <?php 
-                      endif; 
-                      if( !empty($con_tinfo['email_address']) ):
-                    ?>
-                      <li class="">
-                        <div class="fea-pro-grd-btn mail">
-                          <a href="mailto:<?php echo $con_tinfo['email_address']; ?>">
-                            <?php _e('Email', 'mayier'); ?>
-                            <i><img src="<?php echo THEME_URI; ?>/assets/images/white-mail-icon.png"></i>
-                          </a>
-                        </div>
-                      </li>
-                      <?php endif; ?>
+                    <?php if( !empty($telephone) ): ?>
+                        <li>
+                          <div class="fea-pro-grd-btn">
+                            <a href="tel:<?php echo phone_preg($telephone); ?>">
+                              <?php _e('Call', 'mayier'); ?>
+                              <i><img src="<?php echo THEME_URI; ?>/assets/images/white-tell-icon.png"></i>
+                            </a>
+                          </div>
+                        </li>
+                      <?php 
+                        endif; 
+                        if( !empty($whatsapp) ):
+                      ?>
+                        <li class="">
+                          <div class="fea-pro-grd-btn whatsapp">
+                            <a href="https://api.whatsapp.com/send?phone=<?php echo phone_preg($whatsapp); ?>">
+                              <?php _e('WhatsApp', 'mayier'); ?>
+                              <i><img src="<?php echo THEME_URI; ?>/assets/images/white-whatsapp-icon.png"></i>
+                            </a>
+                          </div>  
+                        </li>
+                      <?php 
+                        endif; 
+                      ?>
+                        <li class="">
+                          <div class="fea-pro-grd-btn mail">
+                            <a href="mailto:">
+                              <?php _e('Email', 'mayier'); ?>
+                              <i><img src="<?php echo THEME_URI; ?>/assets/images/white-mail-icon.png"></i>
+                            </a>
+                          </div>
+                        </li>
                     </ul>
                   </div>
                 </div>

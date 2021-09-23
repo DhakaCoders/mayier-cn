@@ -23,7 +23,7 @@
     <div class="hm-date-start filter-col">
       <div class="hm-date-start-inr">
         <div class="">
-          <input class="start-flatpickr" type="text" name="satr_date" placeholder="start date">
+          <input class="start-flatpickr" type="text" name="start_date" placeholder="start date">
         </div>
       </div>
     </div>

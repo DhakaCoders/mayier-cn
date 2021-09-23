@@ -1,6 +1,8 @@
 <?php 
 get_header(); 
 $currentTerm = get_queried_object();
+$telephone = get_field('telephone', 'options');
+$whatsapp = get_field('whatsapp', 'options');
 get_template_part('templates/breadcrumbs');
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $brandQ = isset($_GET['brand']) && !empty($_GET['brand'])? $_GET['brand']: '';
@@ -79,7 +81,6 @@ $terms = get_terms( array(
                 $imgID = get_post_thumbnail_id(get_the_ID());
                 $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): fleet_placeholder('tag');
                 $overview = get_field('overview', get_the_ID());
-                $continfo = get_field('contactinfo', get_the_ID());
                 $prices = $overview['prices'];
               ?> 
                 <li>
@@ -123,10 +124,10 @@ $terms = get_terms( array(
                     </div>
                     <div class="fea-pro-grds-button">
                       <ul class="reset-list clearfix">
-                        <?php if( !empty($continfo['telephone']) ): ?>
+                        <?php if( !empty($telephone) ): ?>
                         <li>
                           <div class="fea-pro-grd-btn">
-                            <a href="tel:<?php echo phone_preg($continfo['telephone']); ?>">
+                            <a href="tel:<?php echo phone_preg($telephone); ?>">
                               <?php _e('Call', 'mayier'); ?>
                               <i><img src="<?php echo THEME_URI; ?>/assets/images/white-tell-icon.png"></i>
                             </a>
@@ -134,29 +135,25 @@ $terms = get_terms( array(
                         </li>
                       <?php 
                         endif; 
-                        if( !empty($continfo['whatsapp']) ):
+                        if( !empty($whatsapp) ):
                       ?>
                         <li class="">
                           <div class="fea-pro-grd-btn whatsapp">
-                            <a href="https://wa.me/<?php echo phone_preg($continfo['whatsapp']); ?>">
+                            <a href="https://api.whatsapp.com/send?phone=<?php echo phone_preg($whatsapp); ?>">
                               <?php _e('WhatsApp', 'mayier'); ?>
                               <i><img src="<?php echo THEME_URI; ?>/assets/images/white-whatsapp-icon.png"></i>
                             </a>
                           </div>  
                         </li>
-                      <?php 
-                        endif; 
-                        if( !empty($continfo['email_address']) ):
-                      ?>
+                      <?php endif; ?>
                         <li class="">
                           <div class="fea-pro-grd-btn mail">
-                            <a href="mailto:<?php echo $continfo['email_address']; ?>">
+                            <a href="mailto:">
                               <?php _e('Email', 'mayier'); ?>
                               <i><img src="<?php echo THEME_URI; ?>/assets/images/white-mail-icon.png"></i>
                             </a>
                           </div>
                         </li>
-                        <?php endif; ?>
                       </ul>
                     </div>
                   </div>
