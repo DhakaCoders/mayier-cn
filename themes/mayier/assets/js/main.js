@@ -294,7 +294,10 @@ if (windowWidth > 767) {
   }
 }
 
-
+$('body').on('change','#brand_change', function() {
+     let brandURL = $( "#brand_change option:selected" ).val();
+     window.location.href = brandURL;
+});
 
     new WOW().init();
 
