@@ -12,6 +12,9 @@ get_header();
   $image_2 = !empty($hbanner['image_2'])? cbv_get_image_src( $hbanner['image_2'] ): '';
 ?>
 <section class="hm-banner">
+  <div class="hm-bnr-img show-sm">
+    <img src="<?php echo THEME_URI; ?>/assets/images/hm-bnr-img-01.png">
+  </div>
   <div class="hm-bnr-overlay"></div>
   <div class="hm-page-banner">
     <div class="page-banner-bg inline-bg" style="background:url(<?php echo $banner; ?>)"></div>
@@ -21,7 +24,7 @@ get_header();
           <div class="col-md-12">
             <div class="hm-page-bnr-des-inr">
               <?php if( !empty($image_2) ): ?>
-              <div class="hm-bnr-img">
+              <div class="hm-bnr-img hide-sm">
                 <img src="<?php echo THEME_URI; ?>/assets/images/hm-bnr-img-01.png">
               </div>
               <?php endif; ?>
