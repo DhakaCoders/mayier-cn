@@ -169,7 +169,12 @@ function cbv_breadcrumbs() {
 
       $post_type = get_post_type_object(get_post_type());
       $term = get_queried_object();
-      echo $sep. $before .'<a href="'.home_url('products').'">Products</a>'. $after. $sep.$before.$term->name. $after ;
+      echo $sep. $before .'<a href="'.home_url('our-fleets').'">Our Fleets</a>'. $after. $sep.$before.$term->name. $after ;
+
+    }elseif ( is_tax('car_type') ) {
+      $post_type = get_post_type_object(get_post_type());
+      $term = get_queried_object();
+      echo $sep. $before .'<a href="'.home_url('our-fleets').'">Our Fleets</a>'. $after. $sep.$before.$term->name. $after ;
 
     } elseif ( is_author() ) {
       global $author;

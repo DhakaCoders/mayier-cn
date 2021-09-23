@@ -213,7 +213,6 @@ if ($('.hidden-bar-wrapper').length) {
 })();
 
 
-/*start of Kashob*/
 
 if( $('.contact-form-wrp').length ){
   $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
@@ -257,12 +256,6 @@ $(window).resize(function(){
 });
 
 
-/*starto of Noyon*/
-
-
-
-/*start of Shariful*/
-
 if($('.select-2-cntlr').length ){
   $('.select-2-cntlr').select2();
 }
@@ -294,8 +287,11 @@ if (windowWidth > 767) {
   }
 }
 
+$('body').on('change','#brand_change', function() {
+     let brandURL = $( "#brand_change option:selected" ).val();
+     window.location.href = brandURL;
+});
 
-
-    new WOW().init();
+new WOW().init();
 
 })(jQuery);

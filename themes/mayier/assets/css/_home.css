@@ -217,7 +217,7 @@ ul.select2-results__options li:before{
     color: #fff!important;
 }
 .select2-container--open .select2-dropdown{
-    top: 0;
+    top: 32px;
 }
 .select2-container--default .select2-results__option--highlighted[aria-selected], 
 .select2-container--default .select2-results__option--highlighted[data-selected] {
@@ -923,6 +923,13 @@ span.select2.select2-container.select2-container--default {
     }
     .fea-pro-grd-btn.mail a {
         padding-left: 30px;
+    }
+    .hm-bnr-img{
+        z-index: 3;
+        right: 10px;
+    }
+    .select2-container--open .select2-dropdown{
+        top: 46px;
     }
 }
 
