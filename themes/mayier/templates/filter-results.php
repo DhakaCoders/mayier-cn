@@ -44,7 +44,7 @@ $terms = get_terms( array(
       <div class="row">
         <div class="col-md-12">
           <div class="fea-pro-sec-inr">
-            <div class="sec-entry-hdr text-center">
+            <div class="sec-entry-hdr text-center" style="padding-bottom: 30px;">
               <h2 class="sec-entry-hdr-title fl-h1"><?php echo $page_title; ?></h2>
             </div>
             <?php if( $query->have_posts() ): ?>

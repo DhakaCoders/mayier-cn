@@ -11,12 +11,12 @@
 	overflow: hidden;
 }
 
-.promotions-grds-cntlr ul{
+.promotions-grds-cntlr > ul{
 	display: flex;
 	margin: 0 -6px;
 	flex-wrap: wrap;
 }
-.promotions-grds-cntlr ul li{
+.promotions-grds-cntlr > ul > li{
 	padding: 0 6px 50px;
 	width: 50%;
 }
