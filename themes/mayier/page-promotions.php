@@ -19,37 +19,67 @@ get_template_part('templates/breadcrumbs');
     </div>
   </div>
 </section>
-
-
-
 <?php
-  $args = array( 'post_type' => 'promotion', 'posts_per_page' => -1 );
-  $loop = new WP_Query( $args );  
-  if ( $loop->have_posts() ) : 
+  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  $args = array( 
+    'post_type' => 'promotion', 
+    'posts_per_page' => 4, 
+    'paged' =>$paged,
+    'orderby' => 'title',
+    'order' => 'desc'  
+  );
+  $query = new WP_Query( $args );  
+  
 ?>
 <div class="promotions-page-con">
   <section class="promotions-grd-sec">
   <div class="promotions-grds-cntlr">
+    <?php if ( $query->have_posts() ) : ?>
     <ul class="reset-list">
       <?php
-        while ( $loop->have_posts() ) : $loop->the_post(); 
-          $promotionsFeaImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-          $promotionsLink = get_field('promo_link', $thisID);
+        while ( $query->have_posts() ) : $query->the_post(); 
+          $promoimgID = get_post_thumbnail_id(get_the_ID());
+          $promotionsFeaImg = !empty($promoimgID)? cbv_get_image_tag($promoimgID): '';
+          $promolink = get_field('promo_link', get_the_ID());
       ?>
       <li>
         <div class="promotions-grd-item">
           <div class="promotions-grd-item-fea-img">
-            <a href="<?php echo $promotionsLink; ?>">
-               <img src="<?php echo $promotionsFeaImg[0] ?>" alt="<?php the_content(); ?>">
-            </a>
+          <?php 
+            if( !empty($promolink) ) printf('<a href="%s">', $promolink);
+            echo $promotionsFeaImg; 
+            if( !empty($promolink) ) printf('</a>');
+          ?>
           </div>
         </div>
       </li>
-    <?php endwhile; wp_reset_postdata(); ?>
+    <?php endwhile; ?>
     </ul>
+    <?php if( $query->max_num_pages > 1 ): ?>
+    <div class="fl-pagination-ctlr clearfix">
+    <?php
+      $big = 999999999; // need an unlikely integer
+      $query->query_vars['paged'] > 1 ? $current = $query->query_vars['paged'] : $current = 1;
+
+      echo paginate_links( array(
+        'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+        'type'      => 'list',
+        'prev_next' => false,
+        'prev_text' => __('Previous'),
+        'next_text' => __('Next'),
+        'format'    => '?paged=%#%',
+        'current'   => $current,
+        'total'     => $query->max_num_pages
+      ) );
+    ?>
+    </div>
+    <?php endif; ?>
+    <?php else: ?>
+      <div class="notfound"><?php echo _e('No Results.', 'mayier') ?></div>
+    <?php endif; wp_reset_postdata(); ?> 
   </div>
   </section>
 </div>
-<?php endif; ?> 
+
 
 <?php get_footer(); ?>

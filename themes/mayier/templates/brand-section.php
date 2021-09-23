@@ -15,7 +15,6 @@ if($brands):
             </div>
             <?php 
               $brandobj = $brands['select_brand'];
-
               if( empty($brandobj) ){
                   $brandobj = get_terms( 'brand', array(
                         'hide_empty' => false,

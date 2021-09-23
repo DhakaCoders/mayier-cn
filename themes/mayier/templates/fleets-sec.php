@@ -175,7 +175,7 @@ $terms = get_terms( array(
           <?php else: ?>
           <div class="jm-pro-grds">
              <?php $no_results = get_field('no_results', 'options'); ?>
-              <div class="notfound"><?php echo !empty($no_results)? $no_results: __('No Results.', 'jmcopier'); ?></div>
+              <div class="notfound"><?php echo !empty($no_results)? $no_results: __('No Results.', 'mayier'); ?></div>
           </div>
             <?php endif; wp_reset_postdata(); ?>
             <div class="fea-pro-btm-des">
