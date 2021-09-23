@@ -215,6 +215,7 @@
 	margin-bottom: 8px;
 	font-size: 14px;
 	color: #fff;
+	text-transform: capitalize;
 }
 .pro-year{
 	color: #fff;
@@ -339,7 +340,7 @@
 	line-height: 1;
 	font-size: 14px;
 	position: relative;
-	padding: 7px 0 5px 21px;
+	padding: 7px 0 8px 21px;
 	border-bottom: 2px solid #eeeaea;
 }
 .rqrmnt-mdul ul li:after{
@@ -399,6 +400,9 @@
 	}
 	.fea-pro-sec.pro-single-fea-pro-sec{
 		padding-top: 75px;
+	}
+	.fl-h6.rqrmnt-mdul-tourists-title, .fl-h6.rqrmnt-mdul-hding-title {
+    	font-size: 16.5px;
 	}
 }
 @media(max-width: 1023px){
@@ -469,6 +473,18 @@
 	.car-desc-cntlr{
 		padding-bottom: 45px;
 	}
+	.rqrmnt-mdul-hding .rqrmnt-mdul-hding-title,
+	.rqrmnt-mdul-hding .rqrmnt-mdul-tourists-title{
+		width: 50%;
+		margin-left: 0;
+	}
+	.rqrmnt-mdul-hding .rqrmnt-mdul-hding-title br,
+	.rqrmnt-mdul-hding .rqrmnt-mdul-tourists-title br{
+		display: none;
+	}
+	.rqrmnt-mdul-hding .rqrmnt-mdul-tourists-title{
+		padding-left: 24px;
+	}
 	
 }
 @media(max-width: 767px){
@@ -534,7 +550,7 @@
 		padding: 20px 15px 0 15px;
 	}
 	.pro-details ul li{
-		margin-bottom: 20px;
+		margin-bottom: 35px;
 	}
 	.fl-h6.pro-con-lft-btn-title{
 		margin-bottom: 20px;
@@ -551,6 +567,24 @@
 	}
 	.car-desc-cntlr{
 		padding-bottom: 20px;
+	}
+	.pro-con-lft-btn ul, .pro-single-hding-rgt-btn ul {
+	    justify-content: center;
+	}
+	.pro-details{
+		padding-bottom: 5px;
+	}
+	.pro-details ul {
+	    flex-wrap: wrap;
+	}
+	.pro-details ul li {
+	    width: 33.333%;
+	}
+	.rqrmnt-mdul-hding .rqrmnt-mdul-tourists-title {
+	    padding-left: 19px;
+	}
+	.rqrmnt-mdul-hding {
+	    padding-left: 19px;
 	}
 
 }
