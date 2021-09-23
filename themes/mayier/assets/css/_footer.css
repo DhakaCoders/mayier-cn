@@ -278,6 +278,12 @@
 	.ftr-menu ul li a{
 		font-size: 16px;
 	}
+	.fl-h6.ftr-col-title{
+		font-weight:  600;
+	}
+	.ftr-col {
+	    padding-right: 0;
+	}
 }
 @media(max-width: 767px){
 	.ftr-copyright p,
