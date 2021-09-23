@@ -162,7 +162,7 @@ $terms = get_terms( array(
             echo paginate_links( array(
               'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
               'type'      => 'list',
-              'prev_next' => false,
+              'prev_next' => true,
               'prev_text' => __('Previous'),
               'next_text' => __('Next'),
               'format'    => '?paged=%#%',
