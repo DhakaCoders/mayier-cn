@@ -121,7 +121,7 @@
 		padding-bottom: 20px;
 	}
 	.promotions-grd-item{
-		max-width: 300px;
+		max-width: 390px;
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -140,5 +140,8 @@
 	}
 	.promotions-page-con {
 	    padding-bottom: 80px;
+	}
+	.pgi-des-title{
+		font-size: 26px;
 	}
 }
