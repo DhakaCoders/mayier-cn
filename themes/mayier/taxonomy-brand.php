@@ -151,9 +151,8 @@ $terms = get_terms( array(
           </div>
           <?php endif; ?>
           <?php else: ?>
-          <div class="jm-pro-grds">
-             <?php $no_results = get_field('no_results', 'options'); ?>
-              <div class="notfound"><?php echo !empty($no_results)? $no_results: __('No Results.', 'jmcopier'); ?></div>
+          <div class="my-pro-grds">
+            <div class="notfound"><?php echo _e('No Results.', 'mayier'); ?></div>
           </div>
             <?php endif; wp_reset_postdata(); ?>
             <?php if( !empty($currentTerm->description) ): ?>
