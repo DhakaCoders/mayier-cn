@@ -615,10 +615,6 @@ body.visible-sidebar{
 	display: none;
 	padding-left: 0;
 }
-
-@media(max-width: 1920px){
-
-}
 @media(max-width: 1699px){
 	.hdr-bdr-content {
 	    left: 0;
